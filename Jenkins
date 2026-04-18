@@ -7,12 +7,18 @@ sudo yum install java-21-amazon-corretto -y
 java --version 
 
 ######   Jnekins direect installatrion cmd from jenkins.io  ######
-
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/rpm-stable/jenkins.repo
 sudo yum upgrade
 # Add required dependencies for the jenkins package
 sudo yum install fontconfig java-21-openjdk
 sudo yum install jenkins
+
+#####  You can enable the Jenkins service to start at boot with the command: ####
+sudo systemctl enable jenkins
+#######  You can start the Jenkins service with the command:  ####
+sudo systemctl start jenkins
+####### You can check the status of the Jenkins service using the command: #####
+sudo systemctl status jenkins
 
 
