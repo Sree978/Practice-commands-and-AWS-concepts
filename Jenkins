@@ -21,4 +21,7 @@ sudo systemctl start jenkins
 ####### You can check the status of the Jenkins service using the command: #####
 sudo systemctl status jenkins
 
+####### password has been written to the log    #######
+/var/lib/jenkins/secrets/initialAdminPassword
+
 
