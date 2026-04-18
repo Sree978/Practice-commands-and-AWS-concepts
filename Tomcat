@@ -1,0 +1,21 @@
+Installation steps 
+java : sudo dnf install java-17-amazon-corretto -y
+tomcat ; sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.82/bin/apache-tomcat-9.0.82.tar.gz
+
+sudo tar -xvzf apache-tomcat-9.0.82.tar.gz
+sudo mv apache-tomcat-9.0.82 tomcat
+
+Step 1
+cd /opt/tomcat/bin
+Step 2: Check files
+ls
+Step 3: Give execute permission
+chmod +x *.sh
+Step 4: Start Tomcat
+./startup.sh
+
+🌐 Step 5: Open in browser
+http://<your-ec2-ip>:8080
+
+
+
