@@ -18,10 +18,15 @@ sudo yum install jenkins
 sudo systemctl enable jenkins
 #######  You can start the Jenkins service with the command:  ####
 sudo systemctl start jenkins
+access over browser http:/ip address:8080
+
 ####### You can check the status of the Jenkins service using the command: #####
 sudo systemctl status jenkins
 
 ####### password has been written to the log    #######
-/var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+Post that install all plugins 
+
+
 
 
