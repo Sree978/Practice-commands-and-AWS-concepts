@@ -5,5 +5,14 @@ Java install step commands
  cmd :   sudo yum update -y
 sudo yum install java-21-amazon-corretto -y
 java --version 
- 
+
+Jnekins direect installatrion cmd from jrnkins.io
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/rpm-stable/jenkins.repo
+sudo yum upgrade
+# Add required dependencies for the jenkins package
+sudo yum install fontconfig java-21-openjdk
+sudo yum install jenkins
+sudo systemctl daemon-reload
 
