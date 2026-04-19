@@ -6,86 +6,35 @@ add mail and test mail verification
 Jenkins > pipeline > add script ntg but stages 
 
 Pipeline - Post Build Actions 
-
 pipeline {
     agent any
 
     stages {
-        stage('Code') {
+        stage('build') {
             steps {
-                echo 'this is code stage'
+                echo 'Hello build World'
             }
         }
-        stage('Build') {
+
+        stage('code') {
             steps {
-                echo 'this is build stage'
+                echo 'Hello code World'
             }
         }
-        stage('Test') {
+
+        stage('test') {
             steps {
-                echo 'this is Test stage'
-            }
-        }
-        stage('Deploy') {
-            input {
-                message "can i deploy?"
-            }
-            steps {
-                echo 'this is Deploy stage'
+                echo 'Hello test World'
             }
         }
     }
-    post {
+post {
         success {
-            mail to: 'awsanddevops18@gmail.com',
+            mail to: 'sreesanav123@gmail.com',
             subject: "Build Status: ${currentBuild.fullDisplayName}",
             body: "The build ${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}. View logs at: ${env.BUILD_URL}"
         }
-        failure {
-            mail to: 'awsanddevops18@gmail.com',
-            subject: "Build Status: ${currentBuild.fullDisplayName}",
-            body: "The build ${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}. View logs at: ${env.BUILD_URL}"
-        }
-        
     }
 }
 
-
-
-Scripted Pipeline 
-node {
-    stage ("Code") {
-        git "https://github.com/devops0014/one.git"
-    }
-}
-
-
-
-Parallel Pipelines : 
-pipeline {
-    agent any
-
-    stages {
-        stage ("Parallel-Test-Cases") {
-            parallel {
-                stage ("TestCase1") {
-                    steps {
-                        sleep 10
-                    }
-                }
-                stage ("TestCase2") {
-                    steps {
-                        sleep 10
-                    }
-                }
-                stage ("TestCase3") {
-                    steps {
-                        sleep 10
-                    }
-                }
-            }
-        }
-    }
-}
-
-
+check mail to get update 
