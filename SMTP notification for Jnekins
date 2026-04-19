@@ -2,3 +2,6 @@ Jenkins > Manage jenkins > System > Email notification SMTP server add  smtp.gma
 advanced > SMTP authentication > user name : our mail id (which will prefer to get notification) & enable use SSL 
 & pass word Google account password  and enabl etwo step verification 
 SMTP port number : 465
+add mail and test mail verification 
+
+
