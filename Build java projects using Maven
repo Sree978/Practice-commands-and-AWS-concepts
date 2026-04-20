@@ -1,1 +1,24 @@
-step 1: install jenkins and connect over browser
+crate ec2 and connect over terminal 
+and go to root user
+install maven 
+yum install maven -y
+mvn -v to check version
+to generate project 
+cmd : mvn archtype:generate
+choose number and filter igore
+Groupid : our wish (  ex maven)
+artifact id : our wish ( ex maven 1)  +Y 
+cd maven 1
+will get pom.xml & src folder
+POM - Project object mondel 
+vim pom.xml - to view inside file 
+
+cd src
+will get main and test files will get 
+
+cd main
+cd java - will get all project details 
+
+
+
+
