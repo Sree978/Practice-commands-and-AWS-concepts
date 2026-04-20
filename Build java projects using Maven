@@ -53,7 +53,11 @@ back to your folder maven 1
 step 2: to compile sourse code
  cmd: mvn compile 
 will get target folder 
+ step 3
 
+unit test 
+
+cmd : mvn test
 
 
 
