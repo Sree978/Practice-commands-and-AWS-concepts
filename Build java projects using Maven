@@ -65,6 +65,14 @@ test-classes
 packgae cmd : mvn package   will get jar file   we have to place it in application server  it will deploy 
 cmd : mvn clean - itd delete target folder
 
+ Mainly   1) project generate 
+            2) compile
+            3)unit test 
+            4)package 
+            5)install
+            6)deploy 
+            7)clean 
+
 
 
 
