@@ -50,7 +50,8 @@ Go to Root diectoty
 CD 
 back to your folder maven 1
 
-
+step 2: to compile sourse code
+ cmd: mvn compile 
 
 
 
