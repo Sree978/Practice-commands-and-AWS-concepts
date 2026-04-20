@@ -4,6 +4,9 @@ install maven
 yum install maven -y
 mvn -v to check version
 to generate project 
+step 1 :  generate project 
+
+
 cmd : mvn archtype:generate
 choose number and filter igore
 Groupid : our wish (  ex maven)
@@ -37,5 +40,19 @@ public class App {
     }
 }
 [root@ip-172-31-73-27 maven]#
+
+
+//////////////////////////
+
+
+Go to Root diectoty 
+
+CD 
+back to your folder maven 1
+
+
+
+
+
 
 
