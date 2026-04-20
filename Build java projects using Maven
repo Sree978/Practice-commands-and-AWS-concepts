@@ -20,6 +20,22 @@ cd main
 cd java - will get all project details 
 
 will get all group id details which we had for our project 
+cd maven 
+cat App.java
+      ######## output #####
 
+
+[root@ip-172-31-73-27 maven]# cat App.java
+package maven;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+[root@ip-172-31-73-27 maven]#
 
 
