@@ -58,7 +58,12 @@ will get target folder
 unit test 
 
 cmd : mvn test
- ll target/
+ ll target/  --- will notice extra 2 folders
+generated-test-sources
+surefire-reports
+test-classes
+
+
 
 
 
