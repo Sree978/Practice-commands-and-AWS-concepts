@@ -70,7 +70,7 @@ cmd : mvn clean - itd delete target folder
             3)unit test 
             4)package 
             5)install
-            6)deploy 
+            6)deploy   - we wont do over command & will deploy on application server
             7)clean 
 
 
