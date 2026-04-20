@@ -58,6 +58,7 @@ will get target folder
 unit test 
 
 cmd : mvn test
+ ll target/
 
 
 
