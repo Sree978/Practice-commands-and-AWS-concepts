@@ -62,6 +62,9 @@ cmd : mvn test
 generated-test-sources
 surefire-reports
 test-classes
+packgae cmd : mvn package   will get jar file   we have to place it in application server  it will deploy 
+cmd : mvn clean - itd delete target folder
+
 
 
 
