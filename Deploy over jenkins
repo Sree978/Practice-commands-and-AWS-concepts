@@ -7,5 +7,8 @@ build > we have to install maven
 will integrate maven over Jenkins 
 Manage jenkins > tools > maven installation > name is our wish   
 go to jenkins > config > build steps >invoke top- level maven targets 
-slect name which we created & Goals mention clean package / clean install & click on build now 
+slect name which we created & Goals mention clean package / clean install & click on build now once it success 
 
+open work spce will notice target folder in side target folder will notice war/jar file 
+
+we have to integrat war/jar file over application server 
