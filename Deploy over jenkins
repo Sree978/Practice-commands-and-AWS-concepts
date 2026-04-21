@@ -7,5 +7,5 @@ build > we have to install maven
 will integrate maven over Jenkins 
 Manage jenkins > tools > maven installation > name is our wish   
 go to jenkins > config > build steps >invoke top- level maven targets 
-slect name which we created & Goals mention clean package 
+slect name which we created & Goals mention clean package / clean install & click on build now 
 
