@@ -1,3 +1,11 @@
 Step 1
 create ec2 & connect over terminal 
-install jenkins
+install jenkins and connect over browser 
+clone repo which it in git 
+check over workspce either its reflecting or not 
+build > we have to install maven 
+will integrate maven over Jenkins 
+Manage jenkins > tools > maven installation > name is our wish   
+go to jenkins > config > build steps >invoke top- level maven targets 
+slect name which we created & Goals mention clean package 
+
