@@ -1,3 +1,7 @@
 Go to jenkins dashboard 
 it would be clone git repo
-Manage jenkins > plugin ans install maven 
+Manage jenkins > Tool and install maven 
+go to pipeline >config>build pipeline 
+
+will to taret file insdie war /jar file will notice
+
