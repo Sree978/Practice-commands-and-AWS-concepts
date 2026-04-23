@@ -9,3 +9,8 @@ docker pull imagename - to download image  -- will get all iamges from hub.docke
 docker run -d --name container1 -p 1111:80 nginx (image name ) - crweate container 
 docker rm containername   --- to remove container  ( we have to stop brfore remove)
 docker stop containername   ; to stop contaner 
+docker stop/start/rm $(docker ps)  : to stop/start/rm all running conatiners 
+docker stop/start/rm $(docker ps -a)  :to stop/start/rm all running conatiners
+docker rmi imagename - to remove images
+docker rmi $(docker images) - to remove all images 
+
