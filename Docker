@@ -1,0 +1,7 @@
+Installtion 
+yum install docker -y
+docker --version
+systemctl start docker  - start docker 
+systemctl status docker  - check status
+
+ 
