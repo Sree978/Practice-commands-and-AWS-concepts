@@ -7,10 +7,5 @@ docker images - to check images are there or not
 docker ps -a  - will conatiners deatils  include stopped containers
 docker pull imagename - to download image  -- will get all iamges from hub.docker.com (ex ngnix, tomcat sql or will create with our own way with our name)
 docker run -d --name container1 -p 1111:80 nginx (image name ) - crweate container 
-docker rm containername   --- to remove container  ( we have to stop brfore remove )
-
-
-
-
-
- 
+docker rm containername   --- to remove container  ( we have to stop brfore remove)
+docker stop containername   ; to stop contaner 
