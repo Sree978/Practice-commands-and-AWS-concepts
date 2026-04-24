@@ -32,4 +32,16 @@ vim context.xml  delete 21 and 22 line
 valve classname .........................
 allow ......................
 
+401 Unauthorized
+
+ conf/tomcat-users.xml   login should in in this path
+vim tomcat-users.xml 
+<role rolename="tomcat"/>     replace tomcat <> manager-gui
+  <role rolename="role1"/>    replace role1 <>manager-script
+  <user username="tomcat" password="<must-be-changed>" roles="tomcat"/>   username : tomat password : admin@123
+        roles : manger-gui, manager-script
+these things we have to over error rules 
+
+
+
 
