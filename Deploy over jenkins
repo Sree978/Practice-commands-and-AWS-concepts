@@ -21,7 +21,15 @@ unzip :  tar -zxvf apache-tomcat-9.0.117.tar.gz
 
 for start service we have to go bin folder
 ./startup.sh   - for excute file 
+connect over browser with ipa address of ec2 will get tomcat server
 
+403 Access Denied error  
+cd .. > [root@app-serve apache-tomcat-9.0.117]#
+to find context.xml file    (cmd : find . -name context.xml)
+cd ./webapps/manager/META-INF/context.xml
+vim context.xml  delete 21 and 22 line 
 
+valve classname .........................
+allow ......................
 
 
