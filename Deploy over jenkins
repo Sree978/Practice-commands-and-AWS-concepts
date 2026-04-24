@@ -19,4 +19,7 @@ have to copy link
 example : wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.117/bin/apache-tomcat-9.0.117.tar.gz (tomact)
 unzip :  tar -zxvf apache-tomcat-9.0.117.tar.gz
 
+for start service we have to go bin folder
+
+
 
