@@ -13,5 +13,8 @@ open work spce will notice target folder in side target folder will notice war/j
 
 we have to integrat war/jar file over application server 
 
-create ec2 and install tomact
+create ec2 and install tomact  (binary way installl)  path : https://dlcdn.apache.org/tomcat/
+
+have to copy link
+example : wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.117/bin/apache-tomcat-9.0.117.tar.gz (tomact)
 
