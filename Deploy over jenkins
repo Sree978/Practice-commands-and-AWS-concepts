@@ -42,6 +42,13 @@ vim tomcat-users.xml
         roles : manger-gui, manager-script
 these things we have to over error rules 
 
+start /stop tomcat we have to to go bin folder
+once chnaged config we have to restart  tomcat
+go to bin folder and restart 
+cmd :   ./shutdown.sh
+start again anad check UI 
+
+
 
 
 
