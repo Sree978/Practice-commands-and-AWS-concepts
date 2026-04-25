@@ -1,1 +1,41 @@
 
+1  yum install docker -y      - install docker 
+    2  systemctl start docker   -start docker 
+    3  systemctl status docker -- check status of docker
+    4  ll
+    5  vim Dockerfile    ---- Dokcerfile should be as it is 
+
+inside docker file ( FROM ubuntu
+MAINTAINER SREE
+LABEL 1st docker)   FROM, MAINTAINER,LABEL are components 
+    6  history
+7  docker build -t myimage .   to build conatiner (Myimage -image name ourwish  . is Dockerfile path )
+8 docker images  -- to check images in docker
+9 docker run --name containername myimage (iamgename)
+10 docker ps -- to check conatiner
+11 docker ps -a   -- to check either container starts or not ) 
+    If container not started even its existed   (Interview question )
+we have to check logs 
+12  docker logs containername    -- to check logs in container
+
+13 docker run -itd --name containername2 myimage      -it    interactice terminal (The terminal should be in conatiner we have create while creating conatiner)
+14  docker exec -it containername2 bash      -- to inside container 
+15  cat /etc/os-release       - to get OS Details 
+Vim Dockerfile
+   16  vim Dockerfile
+   217 vim sree.log   - we have to create image once we changed in vim files
+   18 docker build -t myimage .
+   19 docker images
+ 20  docker run -itd --name containername3 myimage
+   21  docker exec -it containername3 bash
+   22  vim Dockerfile
+   23  cp sree.log myfile.txt
+   24  ll
+   25  vim Dockerfile
+  26  docker build -t myimage:v1 .
+   27   docker images
+
+
+
+ 
+
