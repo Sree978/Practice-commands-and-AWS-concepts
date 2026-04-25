@@ -42,8 +42,8 @@ MAINTAINER SREE
 LABEL 1st docker
 COPY sree.log .
 ADD myfile.txt . / URl also we can add
-WORKDIR /sree/chimpu/romi    - TO SET DEFAUT PATH FOR Conatiner
-RUN      post created image
+WORKDIR /sree/chimpu/romi   - TO SET DEFAUT PATH FOR Conatiner
+RUN      post created image  (code along with dependencies)
 CMD      post created  Container 
 
  
