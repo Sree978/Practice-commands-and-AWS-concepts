@@ -34,6 +34,17 @@ Vim Dockerfile
    25  vim Dockerfile
   26  docker build -t myimage:v1 .
    27   docker images
+28 docker run -itd --name conatinername3 myimage:v1
+
+Vim Editor 
+FROM ubuntu
+MAINTAINER SREE
+LABEL 1st docker
+COPY sree.log .
+ADD myfile.txt . / URl also we can add
+
+
+
 
 
 
