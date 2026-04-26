@@ -4,6 +4,10 @@ vim index.html    -- to write a code
 copy paste code whic we get from deepseek 
 get webservers nginx or httpd
 ---> install we servers and copy sourse code to default path of webserver ( /var/share/nginx/html)
+we have to write docker file (FROM nginx
+COPY index.html /usr/share/nginx/html
+)
+
 create image & container 
 check conatiner started or not 
 check over browswer with ip address
