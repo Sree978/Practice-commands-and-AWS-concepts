@@ -15,6 +15,17 @@ usage  --only build jobs with label expressions matching this node
 launch menthod - launch agents via ssh
 Host - slave private ip for secure / even we can give pubic ip 
 Credentials - credentials of slave server  ntg nut slave key pair
+add > globe > enter pasted key from keypair ex : slave.pem + create 
+Host Key Verification Strategy  -- Non verfying Verification Strategy
+
+we added slave server into jenkins 
+
+go to jenkins dashboard > pipeline > configure > will notice Restrict where this project can be run
+?  slect which we created ex : dev
+
+while building pipleine its build pipeline in slave 
+
+ 
 
 
 
