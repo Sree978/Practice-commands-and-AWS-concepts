@@ -15,6 +15,8 @@ check over browswer with ip address
 ------> Python application <---------
 Create a folder and one touch app.py --> to store code
     Touch requiremnts.txt
+we have to write docker file for both .txt and.py
+
 
 
 
