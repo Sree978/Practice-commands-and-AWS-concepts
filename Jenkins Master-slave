@@ -1,2 +1,5 @@
 
 Create two server one is master and slave 
+install jenkins in master and connect over browser
+go to jenkins dashboard 
+create a job
