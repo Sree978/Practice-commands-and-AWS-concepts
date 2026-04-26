@@ -25,6 +25,10 @@ go to jenkins dashboard > pipeline > configure > will notice Restrict where this
 
 while building pipleine its build pipeline in slave 
 
+
+if you want build all pipelines in multiple slave servers 
+label extension should be same 
+
  
 
 
