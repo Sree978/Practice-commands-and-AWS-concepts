@@ -1,1 +1,6 @@
-
+Get code from deep seek    (example : generate code for bus ticket booking platform using html css and jscript make sure UI should clear and more attcractive by customers and user friendly)
+create a folder (mkdir bustickets)
+vim index.html    -- to write a code
+copy paste code whic we get from deepseek 
+get webservers nginx or httpd
+---> install we servers and copy sourse code to default path of webserver ( /var/www/html/code)
