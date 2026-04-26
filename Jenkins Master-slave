@@ -7,4 +7,17 @@ create a job  clone and git repo and build it and probably its success
 -----> How to build in slave server ---<
 go to slave server ans install java
 
+go to jenkins > manage jenkins > node > create new node  name (slave-1)
+  no of executor (no of pipelines)
+Remote root directory   - /home/ec2-user/jenkins
+label -- any name 
+usage  --only build jobs with label expressions matching this node 
+launch menthod - launch agents via ssh
+Host - slave private ip for secure / even we can give pubic ip 
+Credentials - credentials of slave server  ntg nut slave key pair
+
+
+
+
+
 
