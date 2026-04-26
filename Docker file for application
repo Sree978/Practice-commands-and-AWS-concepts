@@ -17,12 +17,24 @@ Create a folder and one touch app.py --> to store code
     Touch requiremnts.txt
 we have to write docker file for both .txt and.py
 dockerfile 
-FROM python:3.10-slim
-WORKDIR /app
+FROM python
+WORKDIR /myapp
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
 next create image and container 
 finaly try over browser
+
+
+Node js
+
+FROM node
+WORKDIR /myapp
+COPY package*.json .
+RUN npm install
+COPY . .
+CMD ["node", "index.js"]
 
 
 
