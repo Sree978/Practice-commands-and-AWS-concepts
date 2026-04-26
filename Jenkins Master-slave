@@ -2,4 +2,9 @@
 Create two server one is master and slave 
 install jenkins in master and connect over browser
 go to jenkins dashboard 
-create a job
+create a job  clone and git repo and build it and probably its success
+
+-----> How to build in slave server ---<
+go to slave server ans install java
+
+
