@@ -5,3 +5,6 @@ docker run <image_name>
 ENTRYPOINT : append the values
 ENTRYPOINT ["yum", "install", "git", "-y"]
 docker run <image_name> maven    here install git as well as maven also 
+Simple understanding:
+CMD → gets overridden if you pass arguments in docker run
+ENTRYPOINT → does not override, it appends arguments
