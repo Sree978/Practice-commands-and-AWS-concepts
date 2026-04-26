@@ -1,1 +1,7 @@
-
+CMD/ENTRYPOINT : execute the commands post container created.
+CMD : over write
+CMD ["yum", "install", "git", "-y"]
+docker run <image_name>
+ENTRYPOINT : append the values
+ENTRYPOINT ["yum", "install", "git", "-y"]
+docker run <image_name> maven    here install git as well as maven also 
