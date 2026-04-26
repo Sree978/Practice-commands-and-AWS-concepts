@@ -10,3 +10,6 @@ CMD → gets overridden if you pass arguments in docker run
 ENTRYPOINT → does not override, it appends arguments
 ARG - used to pause the variable creating images (we can't access inside the container)
 ENV - used to oause the vaiables we can access inside the container
+we can change ARG vlues in runtime but not ENV values 
+
+
