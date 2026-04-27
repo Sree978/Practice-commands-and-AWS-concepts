@@ -1,3 +1,13 @@
 Create three instances for (Jenkins, tomcat & nexus)
+Install jenkins and connect over browser one server
+Install Tomcat and connect over browser  one more server
+we have two options 
+we can build and run pipelines ins jekins server 
+or tomacat server server like slave 
+--- 2nd option will use application server as Tomcat ---
+Jnekins dash boards > manage jenkins > nodes > create a new node 
+
+Jennkins create and pipline and try to run in slave server (Tomcat)
+
 
 
