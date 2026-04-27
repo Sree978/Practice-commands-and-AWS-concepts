@@ -12,4 +12,35 @@ build ones & its success
 
 3rd server > install nexus
 commands 
+Install java 
+wget https://download.sonatype.com/nexus/3/nexus-3.91.1-04-linux-x86_64.tar.gz
+tar -zxvf nexus-3.91.1-04-linux-x86_64.tar.gz
+Go to > 
+[root@Nexus nexus-3.91.1-04]# cd bin/
+./nexus start 
+[root@Nexus bin]# ./nexus start
+WARNING: ************************************************************
+WARNING: Detected execution as "root" user.  This is NOT recommended!
+WARNING: ************************************************************
+Starting nexus
+[root@Nexus bin]# cd ..
+[root@Nexus nexus-3.91.1-04]# cd ..
+[root@Nexus opt]# useradd nexus
+[root@Nexus opt]# cd nexus-3.91.1-04/
+[root@Nexus nexus-3.91.1-04]# cd ..
+[root@Nexus opt]# chown -R nexus:nexus
+chown: missing operand after ‘nexus:nexus’
+Try 'chown --help' for more information.
+[root@Nexus opt]# chown -R nexus:nexus nexus-3.91.1-04 sonatype-work/
+[root@Nexus opt]# su - nexus
+[nexus@Nexus ~]$ cd /opt
+[nexus@Nexus opt]$ cd nexus-3.91.1-04/
+[nexus@Nexus nexus-3.91.1-04]$ cd bin/
+[nexus@Nexus bin]$ ./nexus start
+Starting nexus
+[nexus@Nexus bin]$ ./nexus status
+Connect over browser http://ipaddress:8081
+
+
+
 
