@@ -1,0 +1,11 @@
+get three server 
+CI tool JENKINS
+APLLICATION SERVER > TOMCAT 
+ARTFACT DERVER > NEXUS
+
+Jenkins dash board > create a job and clone git repo
+Jnekins > manage settings > Tools > install maven 
+and configure 
+install deploy to conatiner plug in
+add tomcat in jenkins
+build ones & its success
