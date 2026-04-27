@@ -8,6 +8,16 @@ or tomacat server server like slave
 Jnekins dash boards > manage jenkins > nodes > create a new node 
 
 Jennkins create and pipline and try to run in slave server (Tomcat)
+install maven in jenkins 
+and build again
+
+for Deploy   ---  instll plugin  deployto container
+
+Jenkins -mydeployment-Configure - post build actions  - deploy war/var to container
+WAR/EAR files -target/*war
+context path - our wish example  (myapp)
+
+
 
 
 
