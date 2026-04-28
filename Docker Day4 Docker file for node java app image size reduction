@@ -15,7 +15,28 @@ chimpu       v1        5e30d08114dc   5 minutes ago   161MB
 ------ >how to reduce image size <---------
   1 take alpine or slim images
   2 multi stage dockerfile
-  3 use .dockerignore file
+  3 use .dockerignore file 
+  vim Dockerfile 
+FROM nginx:stable-alpine
+COPY index.html /usr/share/nginx/html/
+
+[root@ip-172-31-43-121 ~]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+chimpu       v2        e1c29b1ff27c   4 seconds ago    62.2MB
+chimpu       v1        5e30d08114dc   23 minutes ago   161MB
+
+will notice reduced image sice 161 to 62 
+
+same like httpd also 
+
+
+for  Node js  
+ install and clode nodejs repo from git 
+
+
+
+
+
 
 
 
