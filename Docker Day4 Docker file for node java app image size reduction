@@ -79,8 +79,33 @@ will get dokcerfile from vscode  based on our requiremnet both alpine and multis
 
 
 For   JAVA
-clone git repo and install maven 
-and mvn clean package notice build  suceess
+clone git repo and install maven
+and mvn clean package notice build  suceess  
+o/p [root@ip-172-31-43-121 newproject-jenkins]# ll
+total 8900
+-rw-r--r--. 1 root root      20 Apr 28 01:16 README.md
+-rw-r--r--. 1 root root 9102945 Aug 14  2024 apache-maven-3.9.9-bin.tar.gz
+-rw-r--r--. 1 root root    1723 Apr 28 01:16 pom.xml
+drwxr-xr-x. 3 root root      18 Apr 28 01:16 src
+drwxr-xr-x. 4 root root      70 Apr 28 01:48 target
+  will notice target 
+
+will write dockerfile for deploy 
+go to vs code write a dockerfile for java application using tomcat
+[root@ip-172-31-43-121 newproject-jenkins]# vim Dockerfile
+FROM tomact:9
+COPY target/*.war /usr/local/tomcat/webapps/
+
+save 
+145  vim Dockerfile {
+FROM tomcat:8.0.20-jre8
+COPY target/*.war /usr/local/tomcat/webapps/
+}
+146  docker build -t java:v2 .
+  147  docker run -itd --name containerjava1 -p 4321:8080 java:v2
+
+try connect over browser http://ipaddress:4321
+
 
 
 
