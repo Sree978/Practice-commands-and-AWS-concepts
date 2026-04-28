@@ -44,6 +44,9 @@ If admin forgot password  > max it wont happen like this   will go to default us
 Go to jenkins server > default path > /usr/lib/jenkins
 vim config.xml > make usesecurity >false<  + save  & systemctl restart jenkins
 
+manage jenkins > security >security realm> jenkin's own user database + save 
+go to user > security and updare passowrd 
+
 
 --------> Parameters<-------------
 
