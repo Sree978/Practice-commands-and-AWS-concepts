@@ -1,1 +1,15 @@
 
+Go to Jenkins dash board
+ Jenkins dash board will use devolopers, testingteam, supporting team, cloud team & admin however devops enginers also.
+will provide as permissions as per their requirement 
+manage settings >users>select user and create login
+
+Jenkins> Manage Jenkins>security >Authentication>project based matrix autherization strategy 
+add default user  example below table
+
+| User / Group        | Admin | Manage | Read | Cred Create | Cred Delete | Cred Update | Cred View | Agent Build | Agent Configure | Agent Connect | Job Build | Job Configure | Job Read | Run Replay | View Read | SCM Tag |
+|---------------------|-------|--------|------|-------------|-------------|-------------|-----------|-------------|-----------------|--------------|-----------|---------------|----------|------------|-----------|---------|
+| Authenticated Users |       |        |      |             |             |             |           |             |                 |              |           |               |          |            |           |         |
+| Users               |       |        |      |             |             |             |           |             |                 |              |           |               |          |            |           |         |
+| Jenkins (Admin)     |  ✅   |        |      |             |             |             |           |             |                 |              |           |               |          |            |           |         |
+| Jenkins (User)      |       |        |  ✅  |             |             |             |           |             |                 |              |           |               |    ✅    |            |           |         |
