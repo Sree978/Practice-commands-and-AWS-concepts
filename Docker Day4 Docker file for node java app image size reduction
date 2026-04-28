@@ -80,6 +80,7 @@ will get dokcerfile from vscode  based on our requiremnet both alpine and multis
 
 For   JAVA
 clone git repo and install maven 
+and mvn clean package notice build  suceess
 
 
 
