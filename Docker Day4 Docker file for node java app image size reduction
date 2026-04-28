@@ -78,6 +78,8 @@ vim .dockerignore{  will metione file which we dont want to send to container}
 will get dokcerfile from vscode  based on our requiremnet both alpine and multistage dockerfile
 
 
+For   JAVA
+clone git repo and install maven 
 
 
 
