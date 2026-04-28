@@ -13,3 +13,8 @@ add default user  example below table
 | Users               |       |        |      |             |             |             |           |             |                 |              |           |               |          |            |           |         |
 | Jenkins (Admin)     |  ✅   |        |      |             |             |             |           |             |                 |              |           |               |          |            |           |         |
 | Jenkins (User)      |       |        |  ✅  |             |             |             |           |             |                 |              |           |               |    ✅    |            |           |         |
+
+3 steps 
+ jeshma ex --> jenkins user (add)
+ overall read permissions
+ dev-pipeline ----> (read, build, delete) - required permissions
