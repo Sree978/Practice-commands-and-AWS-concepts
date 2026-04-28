@@ -35,4 +35,14 @@ This makes access management:
 - More secure
 - Scalable
 
+--------> Parameters<-------------
+
+Jenkins dashboard > pipeline >configure > general > this project is parameterised 
+
+will use major  choice & string parameter 
+
+we can select paramaters while building jobs 
+
+
+
 
