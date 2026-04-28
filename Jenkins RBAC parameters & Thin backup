@@ -44,7 +44,14 @@ will use major  choice & string parameter
 we can select paramaters while building jobs 
 jenkins >pipeline > configure > genral >this project is parameterised
 select string parameter
-and clone git repo 
+and add git repo 
+select 
+git : Branch Specifier (blank for 'any') : */$chimpu  ( parameter name which we created )
+
+select choice parameter > choices >will add all brnaces whichever we want 
+
+
+
 
 
 
