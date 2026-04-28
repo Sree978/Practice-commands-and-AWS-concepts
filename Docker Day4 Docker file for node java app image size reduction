@@ -66,6 +66,16 @@ touch filr{1..8}
    docker exec -it nodecontainer3 bash       ( for few pplications bash wont wont wokr will use sh) 
    docker exec -it nodecontainer3 sh
 
+we can see all files 
+
+we dont want send few files to container
+vim .dockerignore{  will metione file which we dont want to send to container}
+   58  docker build -t chimpu:v7 .
+   59  docker run -itd --name nodecontainer7 -p 7777:80 chimpu:v7
+   60  docker exec -it nodecontainer7 sh
+
+
+
 
 
 
