@@ -13,6 +13,9 @@ REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 chimpu       v1        5e30d08114dc   5 minutes ago   161MB
 
 ------ >how to reduce image size <---------
+  1 take alpine or slim images
+  2 multi stage dockerfile
+  3 use .dockerignore file
 
 
 
