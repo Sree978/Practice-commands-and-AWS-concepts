@@ -1,2 +1,18 @@
 create a ec2 and  install docker
+ 1  yum install docker -y
+ 2   systemctl start docker
+ 3 systemctl status docker
+ 4 vim index.html
+5   vim Dockerfile
+6  docker build -t chimpu:v1 .
+7  docker run -itd --name mycontainer -p 1111:80 chimpu:v1
+ connect  over browser http://ipaddress:1111
+ex 
+[root@ip-172-31-43-121 ~]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+chimpu       v1        5e30d08114dc   5 minutes ago   161MB
+
+------ >how to reduce image size <---------
+
+
 
