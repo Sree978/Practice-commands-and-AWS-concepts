@@ -50,6 +50,15 @@ COPY . .
 CMD ["node", "index.js"]
 }
 
+O/p 
+ [root@ip-172-31-43-121 nodejs-docker]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+chimpu       v4        40564e448b4e   8 seconds ago    177MB
+chimpu       v3        28e2cf360277   14 minutes ago   909MB
+
+will notice reduced image 909 mb to 117 mb 
+
+
 
 
 
