@@ -42,6 +42,10 @@ Jenkins dashboard > pipeline >configure > general > this project is parameterise
 will use major  choice & string parameter 
 
 we can select paramaters while building jobs 
+jenkins >pipeline > configure > genral >this project is parameterised
+select string parameter
+and clone git repo 
+
 
 
 
