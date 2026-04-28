@@ -41,6 +41,9 @@ Manage jenkins > users > go to particular user who forgot password > security >c
 
 If admin forgot password  > max it wont happen like this   will go to default user and change our admin password 
 
+Go to jenkins server > default path > /usr/lib/jenkins
+vim config.xml > make usesecurity >false<  + save  & systemctl restart jenkins
+
 
 --------> Parameters<-------------
 
