@@ -35,6 +35,13 @@ This makes access management:
 - More secure
 - Scalable
 
+If user forgot password 
+
+Manage jenkins > users > go to particular user who forgot password > security >change password and inform t ouser
+
+If admin forgot password  > max it wont happen like this   will go to default user and change our admin password 
+
+
 --------> Parameters<-------------
 
 Jenkins dashboard > pipeline >configure > general > this project is parameterised 
