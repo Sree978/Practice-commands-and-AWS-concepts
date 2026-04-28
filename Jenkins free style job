@@ -27,16 +27,17 @@ one by one'
     3.5)Poll SCM  - cicd autmation build
 
 4) Environment
-        4.1)Delete workspace before build starts
+        4.1)Delete workspace before build starts  - will use to deleted existed same folder perhap we are creating same file or folder
+
         4.2)Use secret text(s) or file(s)
         4.3)Add timestamps to the Console Output
         4.4)Inspect build log for published build scans
         4.5)Terminate a build if it's stuck
         4.6)With Ant
 5) Build Steps 
-    Execute Windows batch command
-        5.1)Execute shell
-        5.2)Invoke Ant
+        5.8)Execute Windows batch command
+        5.1)Execute shell  - will run commands
+        5.2)Invoke Ant       -
         5.3)Invoke Gradle script
         5.4)Invoke top-level Maven targets
         5.5)Run with timeout
