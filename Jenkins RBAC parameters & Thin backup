@@ -52,10 +52,23 @@ select choice parameter > choices >will add all brnaces whichever we want
 while bulding a pipeline we can able to select which branch we have to select 
 
 -----------> Thin backup <----------
-Jenkins dashboard > manage jenkins > 
+ to back up build information (created users, pipine or job and build job all info store in this path )
+usuvally store in usr/lib/jenkins   
+Backups the most important global and job specific configuration files.
 
-to back up build information (user pipine or job and build job all info store in this path )
-usuvally store in usr/lib/jenkins  
+Jenkins dashboard > manage jenkins >avaialble plugins >Thinbackup and install it
+manage jenkins >tools and acations > thinbackup > will get options backup now restore 
+
+to save in particular path  we have to go 
+Managejenkins > system > ThinBackup Configuration
+Backup directory > /opt/mybackup (folder we have to create )
+we have to give permisssions
+cmd : chown -R jenkins:jenkins mybackup
+
+Move old backups to ZIP files  + save 
+
+manage jenkins > thinbackup > backup now
+go to server and check mybackup 
 
 
 
