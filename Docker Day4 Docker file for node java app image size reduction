@@ -35,7 +35,7 @@ for  Node js
 create a image will node aeoud 1 gb size of image
 and conatiner
 
-Mutlti stage Docker file   ( will use for Nodejs & pythob in resl time )
+-------->  Mutlti stage Docker file   ( will use for Nodejs & pythob in resl time )
 vim Docker file 
 {
 FROM node:19-alpine as firststage
@@ -57,6 +57,15 @@ chimpu       v4        40564e448b4e   8 seconds ago    177MB
 chimpu       v3        28e2cf360277   14 minutes ago   909MB
 
 will notice reduced image 909 mb to 117 mb 
+
+--------> .dockerignore <--------
+touch filr{1..8}
+     vim Dockerfile
+   docker build -t chimpu:v5 .
+   docker run -itd --name nodecontainer3 -p 4444:80 chimpu:v5
+   docker exec -it nodecontainer3 bash       ( for few pplications bash wont wont wokr will use sh) 
+   docker exec -it nodecontainer3 sh
+
 
 
 
