@@ -20,7 +20,8 @@ create and job and free style
            (DEV -- upsream no & down stream test 
             test  -- upsream dev & down stream UAT 
             UAT  -- UP stream is test& down stream is prod
-            prod ) -- upsream UAT & down stream No 
+            prod ) -- upsream UAT & down stream No   id we build dev remaining and build
+one by one'
     3.3)Build periodically
     3.4)GitHub hook trigger for GITScm polling
     3.5)Poll SCM  - cicd autmation build
