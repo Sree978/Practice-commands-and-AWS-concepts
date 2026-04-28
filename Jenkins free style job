@@ -1,1 +1,28 @@
 
+Go to jenkins Dash board
+create and job and free style
+
+1) General
+    1.1) Discard old builds   - to store latest builds from last two or three days with how many buils list we want like 5 or 10 etc
+    1.2) GitHub project   - project url for descreption 
+    1.3) This project is parameterized
+    1.4) Throttle builds  - we can keep limits for partcular time 
+          { Number of builds
+          Approximately 60 minutes between builds
+          Time period
+          Second
+          Allow user triggered builds to skip the rate limit }
+2) Source Code Management
+   git 
+3)Triggers
+    3.1)Trigger builds remotely (e.g., from scripts)
+    3.2)Build after other projects are built   upstream and downstream 
+           (DEV -- upsream no & down stream test 
+            test  -- upsream dev & down stream UAT 
+            UAT  -- UP stream is test& down stream is prod
+            prod ) -- upsream UAT & down stream No 
+    3.3)Build periodically
+    3.4)GitHub hook trigger for GITScm polling
+    3.5)Poll SCM  - cicd autmation build
+
+Environment
