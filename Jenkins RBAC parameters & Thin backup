@@ -23,5 +23,16 @@ Jenkins >chimpu (pipeline) > configure >Enable project-based security> add user 
 we have to select permissions 
 will give pipeline persmissions over pipelines to users as per their requires 
 
+Those all process called RBAC ( Role based access controll)
+--------> RBAC (Role-Based Access Control) is a method of restricting system access <-----
+based on roles assigned to users.
+
+Instead of giving permissions directly to each user, 
+permissions are assigned to roles, and users are assigned to those roles.
+
+This makes access management:
+- Easier
+- More secure
+- Scalable
 
 
