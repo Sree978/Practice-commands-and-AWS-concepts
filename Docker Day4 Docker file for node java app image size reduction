@@ -32,7 +32,23 @@ same like httpd also
 
 for  Node js  
  install and clode nodejs repo from git 
+create a image will node aeoud 1 gb size of image
+and conatiner
 
+Mutlti stage Docker file   ( will use for Nodejs & pythob in resl time )
+vim Docker file 
+{
+FROM node:19-alpine as firststage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+
+FROM firststage as final
+RUN npm install --production
+COPY . .
+CMD ["node", "index.js"]
+}
 
 
 
