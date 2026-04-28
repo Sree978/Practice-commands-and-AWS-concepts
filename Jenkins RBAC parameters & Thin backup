@@ -18,3 +18,10 @@ add default user  example below table
  jeshma ex --> jenkins user (add)
  overall read permissions
  dev-pipeline ----> (read, build, delete) - required permissions
+
+Jenkins >chimpu (pipeline) > configure >Enable project-based security> add user whom we have give permissions 
+we have to select permissions 
+will give pipeline persmissions over pipelines to users as per their requires 
+
+
+
