@@ -75,7 +75,8 @@ vim .dockerignore{  will metione file which we dont want to send to container}
    60  docker exec -it nodecontainer7 sh
 
 
-will get dokcerfile from vscode  based on our requiremnet
+will get dokcerfile from vscode  based on our requiremnet both alpine and multistage dockerfile
+
 
 
 
