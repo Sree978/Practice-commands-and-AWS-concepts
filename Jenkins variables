@@ -34,6 +34,39 @@ varaible
 2)global 
 Global :If a value in pipeline will ppaly for entire pipeline stage 
 LOcal : to applicable evalue for particular stage 
+example 
+
+pipeline {
+    agent {
+        node{
+            label "slave"
+        }
+    }
+    environment {
+        x="77"    ///// global variable ///////
+    }
+    
+    stages {
+        stage('code') {
+            environment {
+                y="66"      /// local variable ///
+            }
+            steps {
+                echo " the value x is $x and y value is $y"
+            }
+        }
+        stage('build ') {
+            steps {
+                echo " the value x is $x"
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo " the value x is $x"
+            }
+        }
+    }
+}
 
 
 
