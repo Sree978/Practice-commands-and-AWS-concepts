@@ -70,8 +70,53 @@ pipeline {
 }
 
 
+If you want pass a single varaible in multiple pipelines  will pass over jenkins
+manage jenkins > system >Environment variables > add > we can add name and values 
+
+and post we will write pipeline code accordingly for pipelines 
+either two or more pipelines
 
 
+how to give approval for pipeline in deployment stage 
+
+
+pipeline >configure >pipeline > at deploy stage take input 
+
+example 
+
+pipeline {
+    agent {
+        node{
+            label "slave"
+        }
+    }
+    environment {
+        x="77"
+    }
+    
+    stages {
+        stage('code') {
+            environment {
+                y="66"
+            }
+            steps {
+                echo " the value x is $x and y value is $y"
+            }
+        }
+        
+        stage('deploy') {
+            input {
+                message "can i deploy"
+            }
+            steps {
+                echo " the value x is $x"
+            }
+        }
+    }
+}
+
+before deploying its ask can i proceed ?
+however build and test will happen
 
 
 
