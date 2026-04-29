@@ -9,3 +9,5 @@ chown -R nexus:nexus nexus-3.91.1-04 sonatype-work
 cd /opt/
 cd nexus-3.91.1-04/bin/
 .nexus start 
+try to connect over browser
+
