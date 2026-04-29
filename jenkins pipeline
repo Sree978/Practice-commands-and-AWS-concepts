@@ -34,6 +34,32 @@ stages : code ,build,test & deploy
 pipeine : agent code build test deploy 
 step : only one step for pipeline 
 
+pipeline {
+    agent any
+
+    stages {
+        stage('code') {
+            steps {
+                echo 'pipeline delcarative type'
+            }
+        }
+        stage('test ') {
+            steps {
+                echo 'pipeline  type'
+            }
+        }
+    }
+}
+
+
+Manage jenkins > plugin>available plugin ? pipeline stage view
+
+for workspace we have to go server default path    cd /var/lib/jenkins/
+
+cd workspace 
+
+
+
 
 
 
