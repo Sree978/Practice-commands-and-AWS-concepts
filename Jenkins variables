@@ -1,0 +1,44 @@
+Will give variable 
+after a agent in pipeline
+pipeline {
+    agent {
+        node{
+            label "slave"
+        }
+    }
+    environment {
+        tools =" docker"
+        topic ="aws"
+        day ="sunday"
+    }
+    
+    stages {
+        stage('code') {
+            steps {
+                echo " welcome to $tools, class on $day "
+            }
+        }
+    }
+}
+
+o/p :  welcome to  docker, class on sunday 
+
+variable we are giving pre pipeline running 
+
+whatever we are paasing varible are static we can change
+whatever we are paasing parameters are dynamic we can't change
+
+varaible 
+
+1)local 
+2)global 
+Global :If a value in pipeline will ppaly for entire pipeline stage 
+LOcal : to applicable evalue for particular stage 
+
+
+
+
+
+
+
+
