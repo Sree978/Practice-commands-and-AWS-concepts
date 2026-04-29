@@ -59,7 +59,35 @@ for workspace we have to go  default path    cd /var/lib/jenkins/
 cd workspace 
 
 to get code use pipineline syntax >Steps
-Sample Step > git 
+Sample Step > git > add repo > generate pipeline script 
+generated script we have to add in steps of pipeline 
+
+check either got code or not 
+
+---- build  ------
+
+jenkins > pipeline > configure > pipeline > after agent any we have to add like this 
+manage jenkins >tools> install maven > name : mymaven or any name ourwish 
+ agent any
+    tools {
+        maven 'mymaven'
+    }
+
+&  add stage after a satges 
+
+stage('build') {
+            steps {
+                sh " mvn clean package"
+            }
+    }
+and build it's success 
+
+will notice target folder 
+inside target folder will notice war file 
+
+------deploy -----
+
+
 
 
 
