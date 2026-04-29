@@ -16,6 +16,22 @@ pipeline {
         }
     }
 }
+P --> pipeline  
+A --> agent  --  which slave server its runs 
+S--> stages  
+S --> stage  
+S --> steps  
+
+pipeline
+
+code    build    test    deploy
+
+stage  (pointing to each box)
+
+stages (pointing to all boxes)
+stage : code & build 
+stages : code ,build,test & deploy 
+pipeine : agent code build test deploy 
 
 
 
