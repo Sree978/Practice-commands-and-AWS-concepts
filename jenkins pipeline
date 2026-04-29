@@ -111,6 +111,34 @@ add stage stage('deploy') {
             }
         }
 
+-------Nexus--------
+
+create a nexus server and connect ove browser
+ sonar application > settings > create a repository 
+
+select type maven2(hosted)
+name : myrepo our wish 
+deployment policy :allow redoploy 
+
+nexy=us integrate withjenkins pipeline 
+we need one plugin  nexus artifact uploader 
+will add in pipeline after build stage 
+
+
+pipline syntax and get step 
+pipine synatx sample text > nexus artifact uploader 
+select version and http 
+add nexus url and add credentails 
+
+groupid :
+version
+repository 
+get all thesee from pom.xml in git repo 
+
+
+
+
+
 
 
 
