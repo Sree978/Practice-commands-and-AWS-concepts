@@ -134,6 +134,10 @@ groupid :
 version
 repository 
 get all thesee from pom.xml in git repo 
+git >repo which we selected and master branch 
+group id  & version will get from pom xml file 
+repositoy : which we created in nexus same name
+
 
 
 
