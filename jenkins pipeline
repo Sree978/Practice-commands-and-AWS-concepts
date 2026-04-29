@@ -146,6 +146,7 @@ stage('artifact'){
             }
         }
 
+build and its success > nexus page >browse > myrepo > will notice here 
 
 
 
