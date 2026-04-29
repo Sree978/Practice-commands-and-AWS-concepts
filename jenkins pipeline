@@ -87,6 +87,14 @@ inside target folder will notice war file
 
 ------deploy -----
 
+create a application server (tomcat) connect over browser 
+and back to pipeline  for deploy step use pipeline syntax for script >sample step > deploy war/ear to a container (Restart jenkins didn;t see this optioneven after istallation of plugin)
+
+
+install plugin > available plugin > deploy to container install it 
+
+
+
 
 
 
