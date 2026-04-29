@@ -54,11 +54,12 @@ pipeline {
 
 Manage jenkins > plugin>available plugin ? pipeline stage view
 
-for workspace we have to go server default path    cd /var/lib/jenkins/
+for workspace we have to go  default path    cd /var/lib/jenkins/
 
 cd workspace 
 
-
+to get code use pipineline syntax >Steps
+Sample Step > git 
 
 
 
