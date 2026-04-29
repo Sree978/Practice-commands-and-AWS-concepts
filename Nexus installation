@@ -1,1 +1,11 @@
-
+root user 
+cd /opt
+install java : sudo dnf install java-17-amazon-corretto -y
+https://help.sonatype.com/en/download.html
+wget https://download.sonatype.com/nexus/3/nexus-3.91.1-04-linux-x86_64.tar.gz
+tar -zxvf nexus-3.91.1-04-linux-x86_64.tar.gz
+useradd nexus
+chown -R nexus:nexus nexus-3.91.1-04 sonatype-work
+cd /opt/
+cd nexus-3.91.1-04/bin/
+.nexus start 
