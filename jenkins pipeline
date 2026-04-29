@@ -137,6 +137,15 @@ get all thesee from pom.xml in git repo
 git >repo which we selected and master branch 
 group id  & version will get from pom xml file 
 repositoy : which we created in nexus same name
+artifact id and type will get over pom.xml 
+
+file : target/myweb-8.7.1.war
+stage('artifact'){
+            steps{
+               nexusArtifactUploader artifacts: [[artifactId: 'myweb', classifier: '', file: 'target/myweb-8.7.1.war', type: 'war']], credentialsId: 'nexusadmin', groupId: 'in.javahome', nexusUrl: '13.221.134.170:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'myrepo', version: '8.7.1' 
+            }
+        }
+
 
 
 
