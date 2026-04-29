@@ -89,9 +89,29 @@ inside target folder will notice war file
 
 create a application server (tomcat) connect over browser 
 and back to pipeline  for deploy step use pipeline syntax for script >sample step > deploy war/ear to a container (Restart jenkins didn;t see this optioneven after istallation of plugin)
-
-
 install plugin > available plugin > deploy to container install it 
+WAR/EAR files : target/*war
+
+Context path ;myapp
+
+and tomcat credentails 
+
+post that build it its will success after to tomact UI and find myapp application 
+
+add stage stage('deploy') {
+            steps {
+                deploy adapters: [tomcat9(
+                    alternativeDeploymentContext: '',
+                    credentialsId: 'tomcatadmin',
+                    path: '',
+                    url: 'http://54.163.18.211:8080'
+                )],
+                contextPath: 'myapp',
+                war: 'target/*.war'
+            }
+        }
+
+
 
 
 
