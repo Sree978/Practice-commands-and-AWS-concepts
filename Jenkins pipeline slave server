@@ -1,1 +1,39 @@
 
+jenkins dashboard & create a job and build a pipeline 
+clone git repo
+create slave server (ec2) & install java 
+
+sudo yum update -y
+sudo yum install java-21-amazon-corretto -y
+Jenkins>manage jenkins >nodes >new node>
+
+------------------ Porcess  [ Name
+
+slave1
+Description
+Number of executors : 2
+Remote root directory : /home/ec2-user
+Labels : slave
+Usage :Only build jobs with label expressions matching this node
+Launch method : Launch agents via SSH
+Host:172.31.28.232
+Credentials: ec2-user
+Host Key Verification Strategy : Non verifying Verification Strategy
+
+
+pipeline {
+    agent {
+        node{
+            label "slave"
+        }
+    }
+    
+
+    stages {
+        stage('code') {
+            steps {
+                git "https://github.com/Sree978/one.git"
+            }
+        }
+    }
+}
