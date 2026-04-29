@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                echo 'Hello World'   - we have to mention what action we have to do here
             }
         }
     }
@@ -32,6 +32,7 @@ stages (pointing to all boxes)
 stage : code & build 
 stages : code ,build,test & deploy 
 pipeine : agent code build test deploy 
+step : only one step for pipeline 
 
 
 
