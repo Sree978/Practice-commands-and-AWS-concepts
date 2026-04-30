@@ -19,12 +19,27 @@ COPY init.sql /docker-entrypoint-initdb.d/
     7  docker ps
     9  docker exec -it container1 bash
 cmd for login mysql
-mysql -u root -p 
+mysql -u root -p  ACR 
 
 show database;   to see list od databases
 use datebasename;               to use database
-show tables;
+show tables;\
 
+
+----------Docker registry ----------
+type 
+1) local registry  (nexus,jfrog ,DTR's)
+2) cloud based registry  (Dockerhub ,ECR (if we use aws ), ACR (IF USE AZURE) )
+
+hOW to store images in dockerhub 
+
+login to dockerhub  cmd : docker login
+ sytanx for push docker hub
+username/repo:image-name
+sree978/mydbrepo:dbimg
+rename image
+docker tag old-name new name 
+docker push imagename:tag
 
 
 
