@@ -21,5 +21,10 @@ COPY init.sql /docker-entrypoint-initdb.d/
 cmd for login mysql
 mysql -u root -p 
 
+show database;   to see list od databases
+use datebasename;               to use database
+show tables;
+
+
 
 
