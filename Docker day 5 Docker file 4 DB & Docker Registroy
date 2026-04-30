@@ -1,1 +1,25 @@
+docker file for DB
+
+> take a server and insattll docker
+post create init.sql  for which code (sql code)
+ceate Dockerfile  [
+FROM mysql/mysql-server:5.7
+EXPOSE 3306
+ENV MYSQL_USER=root
+ENV MYSQL_ROOT_PASSWORD=root123
+COPY init.sql /docker-entrypoint-initdb.d/
+]
+
+ 1  cd db/
+    2  vim init.sql
+    3  vim Dockerfile
+    4  docker build -t sree:v1 .
+    5  clear
+    6  docker run -d --name container1 -p 5555:3306  sree:v1
+    7  docker ps
+    9  docker exec -it container1 bash
+cmd for login mysql
+mysql -u root -p 
+
+
 
