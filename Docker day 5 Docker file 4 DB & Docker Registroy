@@ -39,7 +39,7 @@ username/repo:image-name
 sree978/mydbrepo:dbimg
 rename image
 docker tag old-name new name 
+ex : docker tag appimage dockerhudusrname/repo:myimg
 docker push imagename:tag
-
-
+ex : dcker push dockerhudusrname/repo:myimg
 
