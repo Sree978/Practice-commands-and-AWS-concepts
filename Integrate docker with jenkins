@@ -64,3 +64,45 @@ pipeline {
     }
 }
 
+if you want this with parameters 
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "sree978/sree:tag"
+    }
+
+    stages {
+        stage('code') {
+            steps {
+                git 'https://github.com/sreenadh45/nginx.git'
+            }
+        }
+
+        stage('build') {
+            steps {
+                sh 'docker build -t $myimage .'
+            }
+        }
+
+        stage('registry') {
+            steps {
+                script {
+                    withDockerRegistry([credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/']) {
+                        sh "docker tag $myimage sree978/sree:tag"
+                        sh "docker push sree978/sree:tag"
+                    }
+                }
+            }
+        }
+
+        // ✅ moved inside stages block (only change)
+        stage('deploy') {
+            steps {
+                sh 'docker run -itd --name $containername -p $hostport:80 sree978/sree:$tag'
+            }
+        }
+    }
+}
+
