@@ -1,1 +1,9 @@
+Docker networks 
+to communcate docker to docker or stop communication in between docker will use docker networks 
+4 types 
+1)bridge   - its default network while create containers
+2)host
+3)none
+4)overlay 
+
 
