@@ -22,4 +22,45 @@ Make sure:
 Username: sree978 ✅ (lowercase)
 Password: 👉 PASTE the new token (not old one)
 
+script 
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "sree978/sree:appv1"
+    }
+
+    stages {
+        stage('code') {
+            steps {
+                git 'https://github.com/sreenadh45/nginx.git'        ///// to get github repo /////
+            }
+        }
+
+        stage('build') {
+            steps {
+                sh 'docker build -t myimage .'        ///// to build image /////
+            }
+        }
+
+        stage('registry') {
+            steps {
+                script {
+                    withDockerRegistry([credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/']) {
+                        sh "docker tag myimage $sree978/sree:appv1"       //// to rename before push image ////
+                        sh "docker push $sree978/sree:appv1"              //// to re push image ////
+                    }
+                }
+            }
+        }
+
+        // ✅ moved inside stages block (only change)
+        stage('deploy') {
+            steps {
+                sh 'docker run -itd --name containername -p 1212:80 sree978/sree:appv1'     /// to create conatiner ////
+            }
+        }
+    }
+}
 
