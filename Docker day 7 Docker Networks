@@ -5,5 +5,10 @@ to communcate docker to docker or stop communication in between docker will use 
 2)host
 3)none
 4)overlay 
+docker network ls --- to check list of networks
+
+create 2 to 3 containers
+cmd : docker inspect cont1   --- to know about particular object (ex : container)
+docker inspect cont1 | -i "network"  -- to get particular details
 
 
