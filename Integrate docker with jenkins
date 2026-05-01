@@ -1,1 +1,25 @@
+install docker & jenkins in same server and git also 
+
+Go to jenkins dash board 
+create a pipeline
+VSC : get code from git repo
+build a image 
+images push 
+  cd /var/lib/jenkins/workspace/
+  cd Tinku/
+ chmod 777 /var/run/docker.sock
+  docker images
+Create new token again
+Set:
+Name: jenkins
+Expiry: your choice
+✅ Access permissions: Read & Write
+Click Generate
+Copy token immediately
+
+👉 Manage Jenkins → Credentials → Global → dockerhub
+Make sure:
+Username: sree978 ✅ (lowercase)
+Password: 👉 PASTE the new token (not old one)
+
 
