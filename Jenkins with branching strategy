@@ -15,8 +15,17 @@ will create hot fix branch and will inform to devolopers there was issue kindly 
 once developer made chnages will create and server and run the code to check either its working or not 
 once its run will merge to main branch 
 
-clone git repo 
-mainly src and pom.xml file manditory g
+clone git repo  (one what we taken )
+mainly src and pom.xml file manditory 
+go to git gub & create one repo any name ( newprokect-jenkins1 what i taken)
+drwxr-xr-x. 3 root root 35 May  2 11:03 newproject-jenkins1
+drwxr-xr-x. 5 root root 59 May  2 10:57 one
+ cp -r one/* newproject-jenkins1/   to copy files fron one repo to neworject-jenkins1
+go to neworject-jenkins1
+ git add *   ---to add dikes 
+git status  --- totrach files 
+ git commit -m "all files" .
+ 
 
 
 
