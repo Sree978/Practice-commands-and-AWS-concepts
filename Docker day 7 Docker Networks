@@ -26,6 +26,47 @@ None network : to keep conatiner private dont want to expose
 docker run -itd --name cont6 -p 8888:80 --network=none nginx
 we never access this    will use mostly for databases or sensitive containers 
 
+ docker network create frontend (networkname)    ----- to customize our own network 
+ docker network create backendend (networkname) 
+ front end containers can't communicate with backend caonatiner 
+
+docker run -itd --name frontend-cont -p 1112:80 --network frontend nginx
+docker run -itd --name backend-cont -p 1122:80 --network backend nginx
+
+we have make to cummunicate each other 
+ goto frontend container : 
+docker exec -it frontend-cont bash
+install ping : apt update
+ apt install iputils-ping -y 
+and chech ping of backend conatiner it won't work 
+
+same for backend 
+docker exec -it backend-cont bash
+install ping : apt update
+ apt install iputils-ping -y
+and chech ping of frontend conatiner it won't work 
+
+all connatiners are communicate its they are in same network 
+wont communicate diffirent containers in diffierent network
+
+so for connect it
+
+ docker network connect frontend backend-cont
+ docker network connect backend frontend-cont
+
+now check either communicating or not 
+go to frontend network and ping backend ip 
+
+
+to disconnect 
+
+docker network disconnect backend frontend-cont
+
+
+
+
+
+
 
 
 
