@@ -14,10 +14,17 @@ now we have to check either ex 2nd container ip pinging in 1st container, 1st co
 will do in two ways
 inside conatiner & outside container also
 we have to install yum install iputils -y for every container ping 
+docker exec -it cont1 apt update
+docker exec -it cont1 apt install iputils-ping -y 
 docker exec -it cont1 ping 172.17.0.3
 docker exec -it cont1 touch filename ---- to create a file
 docker exec -it cont1 mkdir sree  -- to creat folder 
+docker run -itd --name cont4 -p 4444:80 --network=host sree978/dm   -- to set host network 
 
+
+None network : to keep conatiner private dont want to expose 
+docker run -itd --name cont6 -p 8888:80 --network=none nginx
+we never access this 
 
 
 
