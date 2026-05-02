@@ -16,6 +16,8 @@ inside conatiner & outside container also
 docker exec -it cont1 ping 172.17.0.3
 docker exec -it cont1 touch filename ---- to create a file
 docker exec -it cont1 mkdir sree  -- to creat folder 
+we have to install yum install iputils -y for every container ping 
+
 
 
 
