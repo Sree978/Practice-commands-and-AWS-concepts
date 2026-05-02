@@ -13,6 +13,13 @@ docker inspect cont1 | -i "network" / docker inspect cont1 | grep -i "ip"  -- to
 now we have to check either ex 2nd container ip pinging in 1st container, 1st conatiner ip pinging in 2nd container
 will do in two ways
 inside conatiner & outside container also
+docker exec -it cont1 ping 172.17.0.3
+docker exec -it cont1 touch filename ---- to create a file
+docker exec -it cont1 mkdir sree  -- to creat folder 
+
+
+
+
 
 
 
