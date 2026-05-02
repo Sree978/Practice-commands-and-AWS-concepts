@@ -1,9 +1,19 @@
 1) Git flow branching startegy
 
-main branch  - which containnsproduction code 
+main branch  - which containnsproduction code   - production 
 develop    - same as main branch same code we have
 feature -  will craete from deevlop branch -  ( when ask client chnages will vreate new feature branch here ) devlopers make chamges and push to feature branch
            for check that particular application will take a server(Dev environment) and Run
 release - will create from feature for testing  - old and new code will and run in anither server (testing environment) will give to test engineers
       if they will error test engineers will inform to devlopers and devlopers fix issue and push code to feacture branch again we have to perform dev environment 
+once its success its merge to release again we have to test environment
+once success in release brnach will merge to main branch 
+
 hotfix 
+same code success in testing failed in production
+will create hot fix branch and will inform to devolopers there was issue kindly fix it 
+once developer made chnages will create and server and run the code to check either its working or not 
+once its run will merge to main branch 
+
+
+ 
