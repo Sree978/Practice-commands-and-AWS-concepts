@@ -25,7 +25,10 @@ go to neworject-jenkins1
  git add *   ---to add dikes 
 git status  --- totrach files 
  git commit -m "all files" .
- 
+ git push origin main
+and its ask for git login generate tocken and form git and login
+
+take another server and install tomcat for deploy application 
 
 
 
