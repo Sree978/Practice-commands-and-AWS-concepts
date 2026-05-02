@@ -9,6 +9,10 @@ docker network ls --- to check list of networks
 
 create 2 to 3 containers
 cmd : docker inspect cont1   --- to know about particular object (ex : container)
-docker inspect cont1 | -i "network"  -- to get particular details
+docker inspect cont1 | -i "network" / docker inspect cont1 | grep -i "ip"  -- to get particular details
+now we have to check either ex 2nd container ip pinging in 1st container, 1st conatiner ip pinging in 2nd container
+will do in two ways
+inside conatiner & outside container also
+
 
 
