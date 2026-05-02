@@ -15,5 +15,9 @@ will create hot fix branch and will inform to devolopers there was issue kindly 
 once developer made chnages will create and server and run the code to check either its working or not 
 once its run will merge to main branch 
 
+clone git repo 
+mainly src and pom.xml file manditory g
+
+
 
  
