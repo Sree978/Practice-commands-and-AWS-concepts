@@ -24,7 +24,8 @@ docker run -itd --name cont4 -p 4444:80 --network=host sree978/dm   -- to set ho
 
 None network : to keep conatiner private dont want to expose 
 docker run -itd --name cont6 -p 8888:80 --network=none nginx
-we never access this 
+we never access this    will use mostly for databases or sensitive containers 
+
 
 
 
