@@ -30,6 +30,12 @@ and its ask for git login generate tocken and form git and login
 
 take another server and install tomcat for deploy application 
 
+ans take one more server an s install jenkins connect  over browser
+
+jenkins dash board > installl plugins > pipeline stage view & deploy to container 
+integrate maven also manage jenkins tools > maven install
+
+>
 
 
  
