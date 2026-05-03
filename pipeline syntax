@@ -1,0 +1,6 @@
+pipeline syntax
+1. 📂 Source Code (GitHub / GitLab) -Used to pull code from repo Tool:Git
+2. 🛠 Build Tools (Maven / Gradle) -Used to build Java apps Tool:apche maven 
+3. 🐳 Docker (Containerization)  -Used to create images & run containers  -Tool:Docker
+4. 📦 Artifact Repository (Nexus / Artifactory)  -Store build artifacts  Tool:sonatype nexus Repo
+5. 🚀 Deployment (Tomcat)  -Deploy WAR files  -Tool:apche tomcat
