@@ -4,3 +4,42 @@ pipeline syntax
 3. 🐳 Docker (Containerization)  -Used to create images & run containers  -Tool:Docker
 4. 📦 Artifact Repository (Nexus / Artifactory)  -Store build artifacts  Tool:sonatype nexus Repo
 5. 🚀 Deployment (Tomcat)  -Deploy WAR files  -Tool:apche tomcat
+| Task      | Tool                      |
+| --------- | ------------------------- |
+| Code      | Git                       |
+| Build     | Apache Maven              |
+| Container | Docker                    |
+| Store     | Sonatype Nexus Repository |
+| Deploy    | Apache Tomcat             |
+| Cloud     | Amazon Web Services       |
+
+Search based on tool:
+
+Git → git
+Maven → sh 'mvn clean package'
+Nexus → nexusArtifactUploader
+Tomcat → deploy
+Docker → sh 'docker build'
+
+| 🔢 No | 🔌 Plugin Name                 | 🔗 Tool / Application     | 🎯 Purpose          | 🧾 Pipeline Step (Syntax)    |
+| ----- | ------------------------------ | ------------------------- | ------------------- | ---------------------------- |
+| 1     | Git Plugin                     | Git                       | Pull source code    | `git url: 'repo-url'`        |
+| 2     | GitHub Plugin                  | GitHub                    | Webhook integration | `git` + webhook trigger      |
+| 3     | Maven Integration Plugin       | Apache Maven              | Build Java apps     | `sh 'mvn clean package'`     |
+| 4     | Gradle Plugin                  | Gradle                    | Build apps          | `sh 'gradle build'`          |
+| 5     | Docker Pipeline Plugin         | Docker                    | Build & push images | `docker.build()`             |
+| 6     | Docker Commons Plugin          | Docker                    | Docker support      | Used internally              |
+| 7     | Nexus Artifact Uploader Plugin | Sonatype Nexus Repository | Upload artifacts    | `nexusArtifactUploader(...)` |
+| 8     | Artifactory Plugin             | JFrog Artifactory         | Store artifacts     | `rtUpload(...)`              |
+| 9     | Deploy to Container Plugin     | Apache Tomcat             | Deploy WAR file     | `deploy(...)`                |
+| 10    | Pipeline AWS Plugin            | Amazon Web Services       | AWS operations      | `withAWS {}`                 |
+| 11    | AWS CLI Plugin                 | AWS                       | Run AWS commands    | `sh 'aws s3 cp ...'`         |
+| 12    | Credentials Binding Plugin     | Jenkins                   | Secure secrets      | `withCredentials(...)`       |
+| 13    | Pipeline Stage View Plugin     | Jenkins                   | View pipeline graph | UI only                      |
+| 14    | Blue Ocean Plugin              | Jenkins                   | Modern UI           | UI only                      |
+| 15    | Build Timeout Plugin           | Jenkins                   | Timeout builds      | `timeout(...)`               |
+| 16    | Email Extension Plugin         | Email                     | Send notifications  | `emailext(...)`              |
+| 17    | Slack Notification Plugin      | Slack                     | Send alerts         | `slackSend(...)`             |
+| 18    | Pipeline Utility Steps Plugin  | Jenkins                   | File/JSON utils     | `readFile`, `writeFile`      |
+| 19    | SSH Agent Plugin               | SSH Servers               | Remote access       | `sshagent(...)`              |
+| 20    | Kubernetes Plugin              | Kubernetes                | Run pods            | `podTemplate {}`             |
