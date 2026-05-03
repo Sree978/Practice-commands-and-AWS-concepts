@@ -78,6 +78,17 @@ pipeline {
 
 build and once success will notice ecom-app in peodction application server tomcat 
 
+If client want any chnages 
+will create a feature branch once chages done by devoplers 
+will create one more tomcat server and and will deploy same surce code only wil
+
+git branch: 'feature/UI-chnage', url: 'https://github.com/Sree978/newproject-jenkins1.git'
+ip of tomcat will change rest changes 
+once its done 
+again will to release brnach also sameo 
+will create one mote tomcat server and 
+git branch: 'release', url: 'https://github.com/Sree978/newproject-jenkins1.git'
+finaly will merge to main branch
 
 
  
