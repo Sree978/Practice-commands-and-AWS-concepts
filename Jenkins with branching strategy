@@ -34,8 +34,50 @@ ans take one more server an s install jenkins connect  over browser
 
 jenkins dash board > installl plugins > pipeline stage view & deploy to container 
 integrate maven also manage jenkins tools > maven install
+pipeline {
+    agent any
 
->
+    tools {
+        maven "mymaven"
+    }
+
+    stages {
+
+        stage('Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Sree978/newproject-jenkins1.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Artifact') {
+            steps {
+                echo 'Artifact created successfully'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                deploy adapters: [
+                    tomcat9(
+                        credentialsId: 'tomcatadmin',
+                        url: 'http://13.217.3.174:8080'
+                    )
+                ],
+                contextPath: 'ecom-app',
+                war: 'target/*.war'
+            }
+        }
+    }
+}
+
+build and once success will notice ecom-app in peodction application server tomcat 
+
 
 
  
