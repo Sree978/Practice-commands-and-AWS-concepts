@@ -1,1 +1,9 @@
+volumes helps to replica of containers , we never loss data 
+ex : we have two conatiners we ran same application in two containers , will change changes by using using volumes in conatiners automatically
+while creating conatiner will add ot attach volume , if we delete anything oe conatiner its delete in all coantiners the all coantiners should same volume 
+if will update anything in containers its update in volume  as well as all containers also
+docker volumes are used to shared data between multiple containers 
+these volumes complete independent on conatiners 
+we can't attch volume for existed containers 
+
 
