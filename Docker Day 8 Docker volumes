@@ -31,6 +31,20 @@ however we can add multiple conatiners to single volume also
   17  docker exec -it cont1 bash   to enter into conatiner 
 will notice devops folder in in image path .
 
+create file in volume path it will reflect in conatiner also 
+docker volume inspect mydata
+
+path : /var/lib/docker/volumes/mydata/_data"
+ create here two are three file 
+tpuch file1 file3 file 4
+
+check in 
+conatiner 
+also 
+docker exec -it cont1 bash
+now go to folder and check will notice files which we created in volumes
+
+
 
 
 
