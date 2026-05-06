@@ -6,4 +6,33 @@ docker volumes are used to shared data between multiple containers
 these volumes complete independent on conatiners 
 we can't attch volume for existed containers 
 
+ 1  yum install docker $$ systemctl start docker
+    2  docker iamges
+    3  docker --version
+    4  sudo yum install docker -y
+    5  sudo systemctl start docker
+    6  sudo systemctl enable docker
+    7  clear
+    8  docker ls
+    9  docker ll
+   10  docker images
+   11  systemctl status docker
+   12  clear
+   13  docker volume create mydata   -- create volume 
+   14  docker volume ls    to check created volume 
+   15  docker volume inspect mydata  - to inspect 
+   16  docker run -itd --name cont1 --mount src=mydata,destination=/devops ubuntu   --- to attching volume with container
+src : source path (Volume name )  destination path : image path 
+we can attch same volume for multiple containers
+if container delete data will be safe in volume
+however we can add multiple conatiners to single volume also 
+
+
+  17  docker exec -it cont1 bash   to enter into conatiner 
+will notice devops folder in in image path .
+
+
+
+
+
 
