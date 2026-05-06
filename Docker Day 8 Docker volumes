@@ -48,6 +48,10 @@ If you will remove files in volume also its deletd in conatiner
 
 if we deleted conatiner however same dat will get from volume 
 
+how we delelted unused volumes netwroks &  images
+ cmd : docker system prune 
+
+
 
 
 
