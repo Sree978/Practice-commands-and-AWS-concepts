@@ -20,7 +20,7 @@ we can't attch volume for existed containers
    12  clear
    13  docker volume create mydata   -- create volume 
    14  docker volume ls    to check created volume 
-   15  docker volume inspect mydata  - to inspect 
+   15  docker volume inspect mydata  - to inspect get all data 
    16  docker run -itd --name cont1 --mount src=mydata,destination=/devops ubuntu   --- to attching volume with container
 src : source path (Volume name )  destination path : image path 
 we can attch same volume for multiple containers
