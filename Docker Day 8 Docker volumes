@@ -44,6 +44,8 @@ also
 docker exec -it cont1 bash
 now go to folder and check will notice files which we created in volumes
 
+If you will remove files in volume also its deletd in conatiner 
+
 
 
 
