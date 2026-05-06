@@ -72,6 +72,10 @@ will get site
 same if you create differen conatiners with different port and same volume 
 we can access same site with dfferent ports 
 
+docker run -itd --name cont1 -p 1111:80 --mount src=appvolume,destination=/usr/share/nginx/html, readonly  nginx
+
+In this conatiner we can't ale to create beacuse we had read only accesss
+
 
 
 
