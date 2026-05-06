@@ -52,7 +52,25 @@ how we delelted unused volumes netwroks &  images
  cmd : docker system prune 
 
 
+Real example 
 
+  docker volume inspect appvolume
+   9docker volum ecreate appvolume
+   90  docker volume create appvolume
+   92  docker run -itd --name cont1 -p 1111:80 --mount src=appvolume,destination=/usr/share/nginx/html nginx
+   93  docker volumes
+   94  docker volume ls
+   95  docker volume inspect appvolume
+   96  cd /var/lib/docker/volumes/appvolume/_data
+   97  vim index.html  (get code from chatgpt or delete existed and copy new one)
+   98  exit
+   99  history
+ now access from browser 
+http:ipadress:1111
+will get site 
+
+same if you create differen conatiners with different port and same volume 
+we can access same site with dfferent ports 
 
 
 
