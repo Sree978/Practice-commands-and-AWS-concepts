@@ -4,3 +4,12 @@
 3)bind volumes  -- replicate in conatiner whcih files have in host 
 Install docker 
 
+mkdir clientapp
+    5  ll
+    6  cd clientapp/
+   8  docker run -itd --name cont1 -v $("pwd"):/usr/share/nginx/html nginx
+   11  docker run -itd --name cont2 -p 1111:80 -v $("pwd"):/usr/share/nginx/html nginx
+   12  docker volume ls
+   13  docker ps
+15  vim index.html
+whatever we make changes in hostpath (current directoy ) its reflect default in container 
