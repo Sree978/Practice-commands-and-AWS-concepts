@@ -1,1 +1,34 @@
+create ec2 server and isntall docker & compose 
+cmd: vi compose.yml   ---create compose file
 
+mkdir myapp
+    3  cd myapp/
+    4  vi compose.yml
+    5  mkdir flight bus movie
+    6  cd bus/
+    8  vim index.html
+   10  vim Dockerfile
+   11  ll
+   14  cp bus/* flight
+   15  ll
+   17  cp * ../movie
+   18  cp * ../flight
+   19  cd ..
+   20  cd flight/
+   21  vim index.html
+   22  cd ..
+   23  cd movie/
+   24  vim index.html
+   25  cd  ..
+   26  yum install tree -y
+   27  tree
+   28  vim bus/Dockerfile
+   29  vim flight/Dockerfile
+   30  vim movie/Dockerfile
+   32  clear
+   33  docker build -t busimage bus/
+   34  clear
+   35  docker build -t fightimage flight/
+   36  docker build -t movieimage movie/
+   37  clear
+   38  docker images
