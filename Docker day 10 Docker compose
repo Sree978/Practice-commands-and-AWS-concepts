@@ -1,1 +1,14 @@
+\\\\\ Docker compose \\\\\
+
+
+used to create multiple services on single host (server)
+composefile name should be same
+
+docker-compose.yml
+docker-compose.yaml
+compose.yml
+compose.yaml
+
+
+
 
