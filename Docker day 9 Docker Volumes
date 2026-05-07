@@ -13,3 +13,9 @@ mkdir clientapp
    13  docker ps
 15  vim index.html
 whatever we make changes in hostpath (current directoy ) its reflect default in container 
+ docker stop $(docker ps)   - to stop containers
+    4  docker container prune  - to delete stopped conatiners
+    5  docker ps  - check conatiners 
+    6  ll  - same data existed even we deleted conatiners 
+
+
