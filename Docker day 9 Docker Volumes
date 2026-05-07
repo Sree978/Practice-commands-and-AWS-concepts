@@ -1,4 +1,6 @@
 3 types
-1)nameed
-2)unnamed  (ananoumous ) - creats by default while creating conatiner 
-3)bind   -- hostto container 
+1)nameed volumes
+2)unnamed  volumes (ananoumous ) - creats by default while creating conatiner 
+3)bind volumes  -- replicate in conatiner whcih files have in host 
+Install docker 
+
