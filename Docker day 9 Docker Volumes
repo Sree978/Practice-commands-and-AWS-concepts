@@ -1,7 +1,7 @@
 3 types
-1)nameed volumes
+1)nameed  volumes    - used for production purpose 
 2)unnamed  volumes (ananoumous ) - creats by default while creating conatiner 
-3)bind volumes  -- replicate in conatiner whcih files have in host 
+3)bind volumes  -- replicate in conatiner whcih files have in host   -used for developemnet purpose
 Install docker 
 ////Bind vlumes ////
 mkdir clientapp
