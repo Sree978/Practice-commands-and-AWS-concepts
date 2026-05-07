@@ -14,24 +14,38 @@ create and ec2 server & write compose file
 vim compose.yml 
 services:
   food:
-    conatiner_name: food_conatiner
-    image: sree/dm
-    port:
+    container_name: food_container
+    image: nginx
+    ports:
       - "8888:80"
+
   instamart:
-    conatiner_name: insta_container
-    image: sree/dm
-    port:
+    container_name: insta_container
+    image: nginx
+    ports:
       - "6666:80"
+
   dineout:
-    conatiner_name: dinwout_container
-    image: sree/dm
-    port:
+    container_name: dineout_container
+    image: httpd
+    ports:
       - "4444:80"
+
 
 before run install compose in same server
 
 dcoker-compose up -d
+
+will get conatiner 
+
+try to access over  browser 
+same ip and different ports
+
+ex :
+http://54.147.88.224:8888   food 
+http://54.147.88.224:6666 instamart 
+http://54.147.88.224:4444    dineout
+
 
 
 
