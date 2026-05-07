@@ -9,6 +9,32 @@ docker-compose.yaml
 compose.yml
 compose.yaml
 
+create and ec2 server & write compose file 
+
+vim compose.yml 
+services:
+  food:
+    conatiner_name: food_conatiner
+    image: sree/dm
+    port:
+      - "8888:80"
+  instamart:
+    conatiner_name: insta_container
+    image: sree/dm
+    port:
+      - "6666:80"
+  dineout:
+    conatiner_name: dinwout_container
+    image: sree/dm
+    port:
+      - "4444:80"
+
+before run install compose in same server
+
+dcoker-compose up -d
+
+
+
 
 
 
