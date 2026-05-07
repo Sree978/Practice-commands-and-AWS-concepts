@@ -32,3 +32,32 @@ mkdir myapp
    36  docker build -t movieimage movie/
    37  clear
    38  docker images
+
+vim compose.yml
+
+services:
+  bus_ticket:
+    container_name: bus-container
+    image: busimage
+    ports:
+      - "1111:80"
+
+  flight__ticket:
+    container_name: fight-container
+    image: flightimage
+    ports:
+      - "2222:80"
+
+  movie_ticket:
+    container_name: movie-container
+    image: movieimage
+    ports:
+      - "3333:80"
+ docker-compose up -d
+
+will notice 3 containers created 
+
+and access all three ports with same ip 
+
+
+
