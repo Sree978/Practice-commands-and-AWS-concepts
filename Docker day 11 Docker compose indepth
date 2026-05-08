@@ -58,6 +58,5 @@ services:
 will notice 3 containers created 
 
 and access all three ports with same ip 
-
-
-
+if we update anything in index.html it wont reflect automatically again we have to build image and re create container then its reflecting
+to over this we have make changes in compose file taht we wont give image
