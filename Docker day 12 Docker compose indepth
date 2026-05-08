@@ -6,6 +6,11 @@ docker -compose images      --->will get images only which we created over compo
 docker-compose build      --- to create images
 docker-compose pause      ---> coonatiners are running only but its in pause state  but request won't work we can't able to browse
 docker-compose unpause     ---> the url works now 
+docker-compose logs   --->to check conatiner logs
+docker-compose config   ---- > to see compose file
+
+
+
 
 
 
