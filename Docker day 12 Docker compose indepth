@@ -5,6 +5,8 @@ docker images    ---> will get iimages which we created manuvally and over compo
 docker -compose images      --->will get images only which we created over compose
 docker-compose build      --- to create images
 docker-compose pause      ---> coonatiners are running only but its in pause state  but request won't work we can't able to browse
+docker-compose unpause     ---> the url works now 
+
 
 
 
