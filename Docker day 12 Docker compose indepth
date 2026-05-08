@@ -1,0 +1,10 @@
+create ec2  and install docker & docker compose
+docker ps     -----> will get all conatiners which we created manuvally and over compose file also
+docker-compose ps   ----> will get containers only which we created over compose
+docker images    ---> will get iimages which we created manuvally and over compose file also
+docker -compose images      --->will get images only which we created over compose
+docker-compose build      --- to create images
+docker-compose pause      ---> coonatiners are running only but its in pause state  but request won't work we can't able to browse
+
+
+
