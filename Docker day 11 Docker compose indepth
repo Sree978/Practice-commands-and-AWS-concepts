@@ -84,6 +84,9 @@ services:
 docker-compose build    ---- will create 3 images at a time
 docker-compose up -d   ----- will create 3 conatiners at at ime
 
+if will make change in changes in particular folder and run above commands its reflect automatically
+
+
 
 
 
