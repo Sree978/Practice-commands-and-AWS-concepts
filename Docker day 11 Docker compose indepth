@@ -81,8 +81,9 @@ services:
     ports:
       - "3333:80"
 
-docker-compose build
+docker-compose build    ---- will create 3 images at a time
+docker-compose up -d   ----- will create 3 conatiners at at ime
 
-will create 3 images at a time
+
 
 
