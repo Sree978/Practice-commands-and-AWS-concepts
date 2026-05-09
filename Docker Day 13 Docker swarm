@@ -1,8 +1,41 @@
-Docker Swarm
- creating a single service on multiple hosts
+\\\\\ Docker Swarm  \\\\\
 
-Doocker Stack 
+Docker Swarm is a container orchestration tool used to manage multiple Docker hosts (servers) as a single cluster.
+Why we use Swarm?
+When applications grow, one server is not enough.
+Swarm helps to:
+Run containers on multiple servers
+Auto-restart failed containers
+Scale applications easily
+Load balance traffic
+High availability
+Practical Example
+Suppose an e-commerce app has:
+Frontend container
+Backend container
+Database container
+If one server crashes, Swarm automatically runs containers on another server.
+Main Components
+Manager Node → Controls the cluster
+Worker Node → Runs containers
+Common Commands
+docker swarm initdocker node lsdocker service create nginxdocker service scale web=5
+Real-Time Usage
+Used in:
+Production environments
+Multi-server applications
+High availability setups
+Microservices architecture
 
-combo = Compose + swam
-used to create multiple services in multiple hosts
+  \\\\\\Docker Stack \\\\
+
+Docker Stack is used to deploy multiple services together in Docker Swarm using a YAML file.
+It works like:
+docker-compose → for single server
+docker stack → for Swarm cluster
+Why we use Stack?
+Instead of creating containers one by one, we define everything in one file.
+
+scaleout  - increasing conatiners
+scalein - decreasing containers
 
