@@ -20,3 +20,33 @@ sudo yum install -y python3-pip
 sudo pip3 install docker-compose
 docker-compose --version
 pip3 install --ignore-installed requests
+
+go to server 
+vim .env
+    NAME=sree
+    PLACE=hyd
+vim compose.yml
+   services:
+  food:
+    container_name: cont-1
+    image: nginx
+    ports:
+      - "1111:80"
+
+  flight:
+    container_name: cont-2
+    image: httpd
+    ports:
+      - "2222:80"
+    env_file:
+      - ./.env
+docker-compose up -d
+
+docker exec -it cont-2 bash
+printenv
+
+you will notive env values over here
+
+
+
+
