@@ -39,3 +39,13 @@ Instead of creating containers one by one, we define everything in one file.
 scaleout  - increasing conatiners
 scalein - decreasing containers
 
+Practice
+
+create 2 ec2 servers one is manager two slaves (worker1 & worker 2)
+
+Install docker in all three servers
+
+go to mamanger server
+
+
+
