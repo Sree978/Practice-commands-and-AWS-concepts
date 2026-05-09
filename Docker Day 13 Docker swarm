@@ -55,5 +55,15 @@ gp to manager server
 docker node ls
 will get 3 server s
 
+docker service create --name tinku1 --publish 1222:80 sree978/sree:appv1
+now go to 
+work 1 & 2 check where conatiner created 
+sometimes its created in maanger only 
+
+now you can browse all with three different ips with same ip 
+http://52.91.157.153:1222/
+http://107.23.231.143:1222/
+
+
 
 
