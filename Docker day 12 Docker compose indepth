@@ -107,6 +107,18 @@ services:
       - password=123
 
 
+Restart policies
+
+1)no : cinatiner fails\crash  ts not going to restart 
+2)alawys : stop /delete/fail  also re create container  we wont use in real time
+3)unless-stopped   - will restart aalwsy until stooped manuvally 4
+4)on-faoliure : if cinatiner exist with error conatiner will restart 
+
+
+
+
+
+
 
 
 
