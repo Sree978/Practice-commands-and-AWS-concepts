@@ -77,7 +77,31 @@ services:
   printenv   - you will notice env values 
    12  docker exec -it cont-2 bash
   printenv   - you will notice env values 
-   13  history
+
+
+Resources 
+To provide CPU and RAM for conatiners
+ex : 0.5 CPU & 1 RAM  for a container
+
+
+
+services:
+  food:
+    container_name: cont-1
+    image: nginx
+    ports:
+      - "1111:80"
+
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+
+    environment:
+      - username=sree
+      - password=123
+
 
 
 
