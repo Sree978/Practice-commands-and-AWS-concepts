@@ -47,5 +47,13 @@ Install docker in all three servers
 
 go to mamanger server
 
+docker swarm init
+you will get these copy  & paste in slave servers 
+docker swarm join --token SWMTKN-1-4wbgpjpg4yx6wp99jwinyf5giep48om0brxykz5zc106htetz9-07ky8izhgmy0pjf3m6psdd6wi 172.31.42.3:2377gp tp 
+gp to manager server
+
+docker node ls
+will get 3 server s
+
 
 
