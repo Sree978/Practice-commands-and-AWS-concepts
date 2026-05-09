@@ -1,13 +1,32 @@
 create ec2  and install docker & docker compose
-docker ps     -----> will get all conatiners which we created manuvally and over compose file also
-docker-compose ps   ----> will get containers only which we created over compose
-docker images    ---> will get iimages which we created manuvally and over compose file also
-docker -compose images      --->will get images only which we created over compose
-docker-compose build      --- to create images
-docker-compose pause      ---> coonatiners are running only but its in pause state  but request won't work we can't able to browse
-docker-compose unpause     ---> the url works now 
-docker-compose logs   --->to check conatiner logs
-docker-compose config   ---- > to see compose file
+docker ps                     -----> will get all conatiners which we created manuvally and over compose file also
+docker-compose ps             ----> will get containers only which we created over compose
+docker images                 ---> will get iimages which we created manuvally and over compose file also
+docker -compose images        --->will get images only which we created over compose
+docker-compose build          --- to create images
+docker-compose pause          ---> coonatiners are running only but its in pause state  but request won't work we can't able to browse
+docker-compose unpause        ---> the url works now 
+docker-compose logs           ---> to check conatiner logs
+docker-compose config          ---- > to see compose file
+docker-compose stop            -----> to stop containers
+docker-compose down            ---->  to stop conatiners & delete
+
+
+
+/////// env - resources - policies  ////////
+
+Environment Variables           ----? will use this values inside the conatiner 
+
+if we have  two or three environments ( dev ,test ,UAT & prod )
+we have individual datbasefor each environment with own credentails 
+we have to creat indivdual image for each environment so its difficult to create even pass key etc
+we wont pass pass these values in Dockerfile
+
+if will pass these values over compose file it's create while creating containers 
+
+
+
+
 
 
 
