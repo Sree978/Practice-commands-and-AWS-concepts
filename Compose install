@@ -47,6 +47,40 @@ printenv
 
 you will notive env values over here
 
+not over env file dorect values 
+
+  1  vim compose.yml
+    2  rm .env
+    3  ll
+    4  docker-compose up -d
+    5  vim compose.yml
+services:
+  food:
+    container_name: cont-1
+    image: nginx
+    ports:
+      - "1111:80"
+    environment:
+      - name=chimpu
+      - loc=myheart
+  flight:
+    container_name: cont-2
+    image: httpd
+    ports:
+      - "2222:80"
+    environment:
+      - name=sree
+      - loc=hyd
+
+    6  docker-compose up -d
+   11  docker exec -it cont-1 bash 
+  printenv   - you will notice env values 
+   12  docker exec -it cont-2 bash
+  printenv   - you will notice env values 
+   13  history
+
+
+
 
 
 
