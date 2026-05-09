@@ -1,3 +1,8 @@
 Docker Swam
  creating a single service on multiple hosts
 
+Doocker Stack 
+
+combo = Compose + swam
+used to create multiple services in multiple hosts
+
