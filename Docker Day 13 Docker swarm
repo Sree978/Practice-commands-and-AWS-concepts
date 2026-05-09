@@ -63,7 +63,15 @@ sometimes its created in maanger only
 now you can browse all with three different ips with same ip 
 http://52.91.157.153:1222/
 http://107.23.231.143:1222/
+docker service scale tinku1=3     ---> for create multiple conatiners (Increase no of containers)
 
+ docker service ps tinku1
+
+ti check where containers created in different servers
+
+
+
+docker service scale tinku1=2  to reduse containers same but count wil reduse
 
 
 
