@@ -1,0 +1,3 @@
+Take 3 server one manager & two worker
+dokcer swarm init  - get tocken and paste in wokker nodes
+go to manager and notice clusters
