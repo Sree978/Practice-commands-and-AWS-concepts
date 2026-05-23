@@ -75,11 +75,7 @@ will notice one network 3 services
    27  docker service ls      \\ to check list of service \\
    28  docker service ps mystack_bus_booking       \\to get details for particular service\\
    29  docker service ps mystack_product__booking
-   30  docker pull sree978/busbooking:latest
-   31  docker images
-   32  docker tag busbooking sree978/busbooking:latest
-   33  docker push sree978/busbooking:latest
-   34  clear
+   30  
 
 
 check all app n all servers
