@@ -79,6 +79,17 @@ will notice one network 3 services
 
 
 check all app n all servers
-wit works 
+with works 
+
+Task :  \\\ Create a Docker stack with 3 services \\\\\\
+
+• services
+• network
+• restart policy
+• resources
+• volumes
+• replicas
+• secrets
+
 
 
