@@ -1,0 +1,88 @@
+Docker stack = Docker compose + docker swarm
+
+
+Take 3 server one manager & two worker
+go to manager
+dokcer swarm init  - get tocken and paste in wokker nodes
+go to manager and notice clusters
+
+Install docker compose 
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo yum install -y python3-pip
+sudo pip3 install docker-compose
+docker-compose --version
+pip3 install --ignore-installed requests
+
+docker-compose version
+
+Stack : to create multiple servers at a time
+write compose file
+vim compose.yml
+services:
+  bus_booking:
+    image: sree978/busbooking
+    ports:
+      - "1111:80"
+    deploy:
+      replicas: 2
+
+  product_booking:
+    image: sree978/product-app
+    ports:
+      - "2222:80"
+    deploy:
+      replicas: 1
+  bus1_booking:
+    image: sree978/sree
+    ports:
+      - "3333:80"
+    deploy:
+      replicas: 3
+
+cmd : docker stack deploy -c compose.yml mystack
+will notice one network 3 services
+
+
+1  hostnamectl hostname master
+    2  exit
+    3  clear
+    4  eportt TMOUT0
+    5  export TMOUT0
+    6  Sudo yum inistall docker -y && systemctl start docker
+    7  Sudo yum install docker -y && systemctl start docker
+    8  yum install docker -y && systemctl start docker
+    9  clear
+   10  docker swarm init
+   11  docker node ls
+   12  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   13  sudo chmod +x /usr/local/bin/docker-compose
+   14  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   15  sudo yum install -y python3-pip
+   16  sudo pip3 install docker-compose
+   17  docker-compose --version
+   18  pip3 install --ignore-installed requests
+   19  docker-compose version
+   20  clear
+   21*
+   22  docker stack deploy -c compose.yml
+   23  docker stack deploy -c compose.yml mystack
+   24  docker stack deploy -c compose.yml
+   25  vim compose.yml
+   26  docker stack ls        \\ to check list of stack \\
+   27  docker service ls      \\ to check list of service \\
+   28  docker service ps mystack_bus_booking       \\to get details for particular service\\
+   29  docker service ps mystack_product__booking
+   30  docker pull sree978/busbooking:latest
+   31  docker images
+   32  docker tag busbooking sree978/busbooking:latest
+   33  docker push sree978/busbooking:latest
+   34  clear
+
+
+check all app n all servers
+wit works 
+
+
