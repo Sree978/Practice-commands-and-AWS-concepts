@@ -63,8 +63,23 @@ Container ( we can modify here )
   both will use to run commands while creating conatiners
   the values which you provided in CMd is overwritten whie creating container
   the values which you provided in ENTRYPOINT, we can't overwritten whie creating container
-  
 
+  CMD behaves default 
+  ENTRYPOINT to fixed behaviour 
+ENTRYPOINT ["python"]    --> Fixed values we can't able to change
+CMD ["index.py"]      --> We can change values inside the command
+
+12) COPY vs ADD
+
+    
+
+13)  how to replicates the data from conatiner to conatiner
+    by using volumes
+   Types : bind , named, unname
+    will do it two ways : cmd & dockefile
+ 
+15)  
+  
 
 
 
