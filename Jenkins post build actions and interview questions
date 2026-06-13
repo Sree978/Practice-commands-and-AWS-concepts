@@ -1,1 +1,83 @@
+JENKINS INTERVIEW QUESTIONS:LTS
 
+"Pipeline as Code in Jenkins"
+"Difference between Declarative and Scripted pipeline"
+"What stages do you use in your CI/CD pipeline?"
+"How do you trigger a pipeline automatically on code push?"   -- will use webhook 
+"How do you store credentials securely in Jenkins?"
+"How do you manage secrets in CI/CD?"
+"What is a Quality Gate?"
+"How does SonarQube fail the pipeline when quality gate fails?"
+"What does waitForQualityGate do in the pipeline?"
+"If a Jenkins job fails, how do you troubleshoot?"   --> o/p console verfiy logs is it because of autherization, permission denied  or dependencies 
+"If a pipeline is slow, how do you optimize it?"  --> will check on which stage slow ( Paralel stages ), CPU or RAM use more , dependencies ( for install dependencies its take more time)
+"Where do you store credentials in Jenkins?"  --> jenkins -manage jenkins - credentials 
+"What is Jenkins shared library?"    ---> 
+"What are default variables in Jenkins?"   --> build id , job name , job url , build url home , pwd , user 
+"What is agent any in Jenkins?"      --->   manage jenkins - nodes - new node - usage : use this node as much as possible 
+"What is label in Jenkins?"    -- > 
+"Can we run parallel stages in Jenkins?"    ---> to run mutiple stage parallay at a time 
+"Can we run a stage on a specific agent?"    --->  yes   inside the stage we can specify the label
+"How do you trigger pipeline on code push?"    -- > webhooks
+"How do you integrate SonarQube?" 
+"Design CI/CD pipeline for microservices?"     ---> 
+"What are the types of pipelines in Jenkins   -->   Declarative & Scripted 
+What is Jenkins and why do we use it?    --> Its CICD tool & used to automate deployment process
+How do you enable multibranch pipeline?,
+Explain your CI/CD pipeline stages.   -->   Source Code Checkout,Build Stage,Unit Testing , Code Quality Analysis,Artifact Upload, 
+Jenkins service is down. How will you troubleshoot?  --> verify status ( systemctl status) if its down  - logs ( xe jenkins)  - if its up will check fire wall & port 
+Jenkins is not accessible on browser. What could be the reason?  -->  
+What is the purpose of PollSCM and Build periodically?  -->  to deploy at particular once devloper changes 
+How do you enable multibranch pipeline?    ->   
+Where are Jenkins logs stored in Linux?   -->  var/lib/jenkins
+Write a basic Jenkins pipeline syntax.    --> 
+What is Blue-Green deployment and how have you implemented it using Jenkins?  --> 
+How do you automate a process using a Jenkins pipeline?    --> webhooks 
+How do you integrate tools like SonarQube, Maven, Docker, or Ansible into a Jenkins pipeline?  
+How do you pass parameters or variables to a Jenkins pipeline?
+What types of Jenkins pipelines have you implemented?    -> declarative 
+What stages have you used in your pipeline?   --> 
+What is a Jenkins job?   --> specific task performing in CI server   free style , multi stage , shared lib 
+What are common Jenkins issues you have faced and how did you resolve them?   --> cred issues , depedencies issue , Url issues
+Where is Jenkins configuration stored when installed on EC2?  -->     var/lib/jenkins
+How do you back up Jenkins before upgrading?    ---> thin back - find home directory  
+How do you secure a Jenkins project?    -->   RBACK , sso setup , storing cred by using Jenkins credentails 
+How do you integrate Jenkins with Ansible?   -->   
+What is the difference between Continuous Delivery and Continuous Deployment?  --> 
+How do you trigger a pipeline only for a specific branch?  --> by use if conditions 
+How do you ignore pushes from certain branches?    --> if not 
+How do you trigger a pipeline when a PR is raised?   --> Webhooks
+How do you use multi-branch pipelines in your project?   --> 
+How do you integrate S3 with Jenkins?
+Explain end-to-end CI/CD workflow using Jenkins.   --> 
+How do you configure Jenkins from scratch?   --> 
+How do you shorten a pipeline that takes 45 minutes?  --> 
+What common Jenkins production issues have you handled?   --> 
+Which CI/CD tool did you use and why?  Jekins
+Why do we need nodes in Jenkins?
+What are upstream and downstream jobs in Jenkins? 
+What are post-build actions in Jenkins?
+What is an agent in Jenkins?
+What is the difference between master and slave configuration?  
+If a slave node is not working, how will you troubleshoot it?   --> java install or not , sufficient resource , ip addres and credentilas
+How do you create a multi-stage pipeline?  --> 
+Explain the Jenkins pipeline script you wrote in your project.   -->. 
+What stages do you include after Maven build and vulnerability scanning?   
+How would you design a single pipeline to deploy 10 microservices to Dev?
+How do you ensure the test stage runs only after a successful build?
+What is artifact management in CI/CD?
+How do you ensure new code commit triggers Jenkins automatically?
+How does Jenkins connect with Kubernetes?
+How do you change an image tag in Kubernetes using Jenkins?
+How does Jenkins integrate with Docker for image build and push?
+What is the purpose of withDockerRegistry in Jenkins?
+A Jenkins stage fails due to credential issues — how do you fix it?    --> check credebtails there or not & expire date 
+How do you manually trigger a job when approval is required?   --> input 
+What happens if Quality Gate fails and abortPipeline: false is set?
+If Maven build stage is taking more time, what could be the reasons?  --> Testcases & dependencies 
+If a pipeline fails due to missing environment variables, how do you fix it?   --> to check particuar job env variable 
+A job works in Dev but fails in Production — how do you troubleshoot?   --> Env vaiable , config mismatch 
+How do you handle rollback in a pipeline?   ---> 
+If version 1.2 deployment fails but 1.1 is stable, what will you do?
+What is concurrency issue in pipelines?
+How do you calculate approvals before production?
