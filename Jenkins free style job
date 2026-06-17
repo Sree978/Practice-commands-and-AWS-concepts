@@ -45,3 +45,63 @@ one by one'
         5.7)Trigger/call builds on other projects
 
 
+Implementation 
+
+Jenkins Freestyle Job Configuration
+1. General
+1.1 Discard Old Builds
+Store only recent builds
+Save disk space
+1.2 GitHub Project
+Add GitHub repository URL
+1.3 This Project is Parameterized
+Pass parameters like Environment, Branch, Version
+1.4 Throttle Builds
+Limit number of concurrent builds
+Control build frequency
+2. Source Code Management
+2.1 Git
+Connect Jenkins to GitHub/GitLab repository
+3. Build Triggers
+3.1 Trigger Builds Remotely
+Trigger build from scripts or API
+3.2 Build After Other Projects are Built
+Configure Upstream and Downstream jobs
+3.3 Build Periodically
+Schedule builds using cron
+3.4 GitHub Hook Trigger for GITScm Polling
+Trigger build automatically on code push
+3.5 Poll SCM
+Jenkins checks repository periodically for changes
+4. Build Environment
+4.1 Delete Workspace Before Build Starts
+Remove existing workspace before build
+4.2 Use Secret Text(s) or File(s)
+Store passwords, tokens, keys securely
+4.3 Add Timestamps to the Console Output
+Display timestamps in build logs
+4.4 Inspect Build Log for Published Build Scans
+Analyze build logs and reports
+4.5 Terminate a Build if It's Stuck
+Automatically stop hanging builds
+4.6 With Ant
+Use Apache Ant during build process
+5. Build Steps
+5.1 Execute Shell
+Execute Linux shell commands
+5.2 Invoke Ant
+Build Java applications using Ant
+5.3 Invoke Gradle Script
+Build applications using Gradle
+5.4 Invoke Top-Level Maven Targets
+Run Maven goals like clean install
+5.5 Run with Timeout
+Stop build after specified timeout
+5.6 Set Build Status to "Pending" on GitHub Commit
+Update GitHub commit status
+5.7 Trigger/Call Builds on Other Projects
+Trigger another Jenkins job
+5.8 Execute Windows Batch Command
+Execute Windows commands using batch scripts
+
+
