@@ -29,8 +29,21 @@ while building pipleine its build pipeline in slave
 if you want build all pipelines in multiple slave servers 
 label extension should be same 
 
- 
 
+
+Implementation 
+
+Step 1: Create Two EC2 Servers       --> Jenkins Master  & Jenkins Agent
+
+  Jenkins Master : Jenkins installation, Pipeline creation, User management, Plugin management, Build scheduling
+  Jenkins Agent : Execute builds, Run scripts, Build Docker images, Deploy applications
+Step 2: Install Jenkins on Master
+Step 3: Create Jenkins Job
+  Freestyle Job : New Item, Freestyle Project, Source Code Management & Git Repository URL , Build, Save, Build Now
+
+step 4 : Building on Agent (Slave) Server  :   Install Java on Agent , SSH to slave:
+Step 5: Add Agent Node : 
+    
 
 
 
