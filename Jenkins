@@ -38,5 +38,16 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
 
+Implementation Steps
+   1. Provision Jenkins Server    {Created EC2 instance (Amazon Linux), Configured Security Group ,Port 22 → SSH
+    Port 8080 → Jenkins UI }
+   2. Install Java 21
+   3. Install Jenkins
+   4. Start Jenkins Service
+   5. Access Jenkins         :   http://<public-ip>:8080
+
+  
+
+
 
 
