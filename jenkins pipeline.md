@@ -1,5 +1,7 @@
 Go to jenkins dashboard 
 
+![Uploading image.png…]()
+
 Pipline two types 
 1) scripted
 2)declarative  
