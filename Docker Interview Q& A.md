@@ -58,7 +58,10 @@ Container ( we can modify here )
 
 10) Docker architecture
 
-11) CMD vs ENTRYPOINT
+![Uploading image.png…]()
+
+
+12) CMD vs ENTRYPOINT
 
   both will use to run commands while creating conatiners
   the values which you provided in CMd is overwritten whie creating container
